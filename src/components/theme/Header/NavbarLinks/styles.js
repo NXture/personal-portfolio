@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   a {
-    color: #000;
+    color:${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     text-decoration: none;
 
 		@media (max-width: 960px) {
-			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+			color: ${({ theme }) => (theme === "light" ? "unset" : "difference")};
 		}
   }
 
@@ -41,4 +41,4 @@ export const Wrapper = styled.div`
 					}
 			}
 	`}
-`;
+`

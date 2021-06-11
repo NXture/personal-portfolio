@@ -1,6 +1,6 @@
 module.exports = {
     defaultTitle: 'metarules',
-    logo: '../assets/icon.png',
+    logo: '/favicon/icon.png',
     author: 'Varun Srivathsa',
     url: 'https://metarules.tech',
     legalName: 'Varun Gowda',

@@ -1,4 +1,4 @@
-const config = require("./src/data/config");
+const config = require("./src/data/config")
 
 require("dotenv").config({
   path: `.env`,
@@ -9,6 +9,9 @@ module.exports = {
     title: config.defaultTitle,
     description: config.defaultDescription,
     author: config.author,
+  },
+  flags: {
+    THE_FLAG: false,
   },
   plugins: [
     {
@@ -23,9 +26,6 @@ module.exports = {
         fetchOptions: {},
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -46,8 +46,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/posts`,
+        name: `posts`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -60,7 +65,32 @@ module.exports = {
         icon: `static/favicon/icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/content/posts`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
