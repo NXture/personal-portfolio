@@ -4,6 +4,8 @@ date: 2021-06-03
 author: "Varun Srivathsa"
 tags:
   - Data Science
+description: "Ever since I started my data science learning journey, I feel like I've accomplished a great deal of stuff. Amidst those accomplishments, I also see some mistakes that shine crystal clear."
+featureImage: "../../featureImage/2-mistakes.jpg"
 ---
 
 > _Image by <a href="https://pixabay.com/users/stevepb-282134/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=876597">Steve Buissinne</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=876597">Pixabay</a>_

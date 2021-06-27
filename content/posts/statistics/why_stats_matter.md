@@ -5,9 +5,11 @@ author: "Varun Srivathsa"
 tags:
   - mathematics
   - statistics
+description: "Everyone wants answers and in the modern world, often the most important answers come in the form of numbers. 🔢"
+featureImage: "../../featureImage/why_stats_matter.png"
 ---
 
-**_Everyone wants answers_** and in the modern world, often the most import answers come in the form of numbers.
+**_Everyone wants answers_** and in the modern world, often the most important answers come in the form of numbers.
 
 But why do you want these answers? What could you do with those magic numbers?
 

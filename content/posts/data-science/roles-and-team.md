@@ -5,6 +5,8 @@ author: "Varun Srivathsa"
 tags:
   - Data Science
   - Big Data
+description: "There are so many different skills and so many different elements involved in a data science project that you're going to need people from all sorts of different backgrounds with different techniques to contribute to the overall success of the project."
+featureImage: "../../featureImage/roles-and-teams-DS.jpeg"
 ---
 
 ### Data science is fundamentally a team sports ⚽
