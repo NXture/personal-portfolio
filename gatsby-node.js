@@ -5,8 +5,9 @@
  */
 
 const path = require("path")
-//const { slugify } = require("./src/utils/utilityFunctions")
+const { slugify } = require("./src/utils/utilityFunctions")
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const _ = require(`lodash`)
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -60,6 +61,39 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: node.fields.slug,
       component: path.resolve(`./src/templates/single-post.js`),
       context: { id: node.id },
+    })
+  })
+
+  let tags = []
+  _.each(result.data.allMdx.edges, edge => {
+    if (_.get(edge, "node.frontmatter.tags")) {
+      tags = tags.concat(edge.node.frontmatter.tags)
+    }
+  })
+
+  let tagPostCounts = {}
+  tags.forEach(tag => {
+    tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1
+  })
+
+  tags = _.uniq(tags)
+
+  createPage({
+    path: `/tags`,
+    component: path.resolve(`./src/templates/tags-page.js`),
+    context: {
+      tags,
+      tagPostCounts,
+    },
+  })
+
+  tags.forEach(tag => {
+    createPage({
+      path: `/tag/${slugify(tag)}`,
+      component: path.resolve(`./src/templates/tag-posts.js`),
+      context: {
+        tag,
+      },
     })
   })
 }

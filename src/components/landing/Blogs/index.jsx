@@ -47,6 +47,7 @@ export const Blogs = () => {
               image={
                 post.frontmatter.featureImage.childImageSharp.gatsbyImageData
               }
+              alt="feature images"
             />
             <Card theme={theme}>
               <div>

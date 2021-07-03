@@ -33,6 +33,18 @@ export const Item = styled.div`
   p {
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
   }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  ul li {
+    padding: 0px 1rem;
+    margin-bottom: 0px;
+  }
 `;
 
 export const Content = styled.div`

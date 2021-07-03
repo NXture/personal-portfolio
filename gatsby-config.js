@@ -11,7 +11,7 @@ module.exports = {
     author: config.author,
   },
   flags: {
-    THE_FLAG: false,
+    DEV_SSR: false,
   },
   plugins: [
     {
