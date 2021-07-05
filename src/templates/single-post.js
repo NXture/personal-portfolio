@@ -1,9 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Link } from "gatsby"
-import { Layout } from "components/common"
+import { Layout, Container, Seo } from "components/common"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Pen from "assets/icons/writing.svg"
 import { slugify } from "utils/utilityFunctions"
@@ -13,13 +12,14 @@ const shortcodes = { Link } // Provide common components here
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
+      <Seo />
       <GatsbyImage
         style={{ display: "flex", justifyContent: "center", margin: "0% 4%" }}
         image={mdx.frontmatter.featureImage.childImageSharp.gatsbyImageData}
         alt="feature images"
       />
-      <div style={{ margin: "4% 10%" }}>
-        <h1>{mdx.frontmatter.title}</h1>
+      <Container>
+        <h1 style={{ marginTop: "4%" }}>{mdx.frontmatter.title}</h1>
         <div
           style={{
             display: "flex",
@@ -53,7 +53,7 @@ export default function PageTemplate({ data: { mdx } }) {
         <MDXProvider components={shortcodes}>
           <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
         </MDXProvider>
-      </div>
+      </Container>
     </Layout>
   )
 }
