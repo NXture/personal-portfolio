@@ -62,7 +62,7 @@ export const Blogs = () => {
                 {post.frontmatter.tags.map(tag => (
                   <li key={tag}>
                     <Link to={`/tag/${slugify(tag)}`}>
-                      <span>{tag}</span>
+                      <span className="tag">{tag}</span>
                     </Link>
                   </li>
                 ))}
