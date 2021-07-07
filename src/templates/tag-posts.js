@@ -40,7 +40,7 @@ const TagPosts = ({ data, pageContext }) => {
                   {node.frontmatter.tags.map(tag => (
                     <li key={tag}>
                       <Link to={`/tag/${slugify(tag)}`}>
-                        <span>{tag}</span>
+                        <span style={{ color: "#fff" }}>{tag}</span>
                       </Link>
                     </li>
                   ))}
