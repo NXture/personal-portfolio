@@ -9,31 +9,31 @@ const About = () => {
       <Container>
         <div style={{ margin: "0% 5%" }}>
           <h1>About Me</h1>
-          <h3>
+          <h2>
             <span role="img" aria-label="greetings">
               👋
             </span>
             Hi there, thanks for visiting!
-          </h3>
-          <p>
+          </h2>
+          <h3>
             I'm Varun, a student and freelancer pursuing a career in data
             science. Currently, I'm studying Bachelor of Computer Application -
             Specialization in Data Science at Jain University, Bangalore.
-          </p>
-          <p>
+          </h3>
+          <h3>
             This site is my corner of the internet which I am using to
             experiment, share and document things I learned.
-          </p>
+          </h3>
           <h3>
             "Feedback is really appreciated"
             <span role="img" aria-labelledby="smily">
               😊
             </span>
           </h3>
-          <p>
+          <h3>
             Feel free to email me at varun.srivathsa@gmail.com, or DM on{" "}
             <Link>Twitter</Link>.
-          </p>
+          </h3>
         </div>
       </Container>
     </Layout>

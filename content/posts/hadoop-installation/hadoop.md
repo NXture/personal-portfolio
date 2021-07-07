@@ -6,7 +6,7 @@ tags:
   - Big Data
   - Tutorial
   - Hadoop
-description: "This article provides a step-by-step guide to install **Hadoop** on Windows 10 via WSL (Windows Subsystem for Linux). These instructions are also applicable for installing Hadoop on Linux systems."
+description: "This article provides a step-by-step guide to install Hadoop on Windows 10 via WSL (Windows Subsystem for Linux). These instructions are also applicable for installing Hadoop on Linux systems."
 featureImage: "../../featureImage/hadoop-install-wsl.jpg"
 ---
 

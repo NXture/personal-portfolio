@@ -18,8 +18,6 @@ I don't regret making those mistakes. I believe we all learn from our mistakes a
 
 In this article, I would like to share 2 main mistakes that every student or beginners should avoid while pursuing data science career.
 
----
-
 #### 1. Too much watching 👓💻
 
 It is really hard and challenging to learn data science. What makes it hard is not a lack of resources. I think there is a tremendous amount of resources to learn data science. They are offered in various forms such as video and tutorials, articles, MOOC( Massive Open Online Courses ) courses, micro degrees, and so on.

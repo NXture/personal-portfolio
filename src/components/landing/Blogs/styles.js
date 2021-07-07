@@ -27,13 +27,15 @@ export const Item = styled.div`
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   h4,
-  h2,
-  .tag {
+  h2 {
     color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
   }
 
-  h2,
   .tag {
+    color: #fff;
+  }
+
+  h2 {
     &:hover {
       color: #007bff;
       text-decoration: none;
@@ -51,8 +53,13 @@ export const Item = styled.div`
   }
 
   ul li {
-    padding: 0px 1rem;
-    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #ff0066;
+    border-radius: 5px;
+    padding: 3px 6px;
+    margin: 5px;
+    box-shadow: rgba(149, 157, 165, 0.8) 2px 2px 1px;
   }
 `
 

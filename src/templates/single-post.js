@@ -4,7 +4,6 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Layout, Container, Seo } from "components/common"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Pen from "assets/icons/writing.svg"
 import { slugify } from "utils/utilityFunctions"
 
 const shortcodes = { Link } // Provide common components here
@@ -20,30 +19,38 @@ export default function PageTemplate({ data: { mdx } }) {
       />
       <Container>
         <h1 style={{ marginTop: "4%" }}>{mdx.frontmatter.title}</h1>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            borderBottom: "10px",
-          }}
-        >
-          <img
-            src={Pen}
-            style={{ margin: "10px 10px 10px 0px" }}
-            width="30px"
-            alt="writing logo"
-          />
-          <div>
-            <span>{mdx.frontmatter.date}</span> by{" "}
-            <span>{mdx.frontmatter.author}</span>
-          </div>
-        </div>
         <div>
-          <ul>
+          <span>{mdx.frontmatter.date}</span>{" "}
+          <span role="img" aria-labelledby="divider">
+            ◾
+          </span>{" "}
+          <span>{mdx.frontmatter.author}</span>
+        </div>
+        <hr style={{ margin: "4px 0px" }} />
+        <div>
+          <ul
+            style={{
+              listStyleType: "none",
+              display: "flex",
+              justifyContent: "flex-start",
+              marginLeft: "0px",
+            }}
+          >
             {mdx.frontmatter.tags.map(tag => (
-              <li key={tag}>
+              <li
+                style={{
+                  fontSize: 12,
+                  fontWeight: "bolder",
+                  backgroundColor: "#ff0066",
+                  borderRadius: 5,
+                  padding: "3px 6px",
+                  margin: "5px",
+                  boxShadow: "rgba(149, 157, 165, 0.8) 2px 2px 1px",
+                }}
+                key={tag}
+              >
                 <Link to={`/tag/${slugify(tag)}`}>
-                  <span>{tag}</span>
+                  <span style={{ color: "#fff" }}>{tag}</span>
                 </Link>
               </li>
             ))}

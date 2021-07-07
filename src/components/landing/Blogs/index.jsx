@@ -50,10 +50,14 @@ export const Blogs = () => {
               alt="feature images"
             />
             <Card theme={theme}>
-              <div>
-                <span>{post.frontmatter.date}</span> by{" "}
+              <div style={{ marginBottom: 5 }}>
+                <span>{post.frontmatter.date}</span>{" "}
+                <span role="img" aria-labelledby="divider">
+                  ◾
+                </span>{" "}
                 <span>{post.frontmatter.author}</span>
               </div>
+              <hr style={{ margin: "4px 0px" }} />
               <Link to={post.fields.slug}>
                 <h2>{post.frontmatter.title}</h2>
               </Link>

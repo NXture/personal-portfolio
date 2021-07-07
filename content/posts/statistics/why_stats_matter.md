@@ -3,8 +3,8 @@ title: "Why Statistics Matter in your Life!"
 date: 2021-04-18
 author: "Varun Srivathsa"
 tags:
-  - mathematics
-  - statistics
+  - Mathematics
+  - Statistics
 description: "Everyone wants answers and in the modern world, often the most important answers come in the form of numbers. 🔢"
 featureImage: "../../featureImage/why_stats_matter.png"
 ---
