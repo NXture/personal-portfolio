@@ -47,8 +47,7 @@ export const Details = styled.div`
     }
   }
 
-  h4,
-  li {
+  h4 {
     margin-bottom: 0;
     font-size: 32pt;
     font-weight: normal;
@@ -63,116 +62,42 @@ export const Details = styled.div`
       font-size: 26pt;
     }
   }
-  div {
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    height: 65px;
-    margin-top: -10px;
-    li {
-      font-size: 50px;
-      font-weight: bolder;
-      padding: 0 0;
-      height: 45px;
-      margin-bottom: 45px;
-      display: block;
-      text-decoration: underline;
-    }
-  }
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  .flip2 {
-    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-  }
-  .flip3 {
-    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-  }
-  .flip4 {
-    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+
+  .topics:before {
+    content: "";
+    animation: animate infinite 10s;
+    animation-delay: 0.2s;
   }
 
-  @keyframes flip2 {
-    0% {
-      margin-top: -180px;
-    }
-    5% {
-      margin-top: -90px;
-    }
-    50% {
-      margin-top: -90px;
-    }
-    55% {
-      margin-top: 0px;
-    }
-    99.99% {
-      margin-top: 0px;
-    }
-    100% {
-      margin-top: -270px;
+  .topics {
+    position: absolute;
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-decoration:underline ;
+    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
     }
   }
 
-  @keyframes flip3 {
-    0% {
-      margin-top: -270px;
-    }
-    5% {
-      margin-top: -180px;
-    }
-    33% {
-      margin-top: -180px;
-    }
-    38% {
-      margin-top: -90px;
-    }
-    66% {
-      margin-top: -90px;
-    }
-    71% {
-      margin-top: 0px;
-    }
-    99.99% {
-      margin-top: 0px;
-    }
-    100% {
-      margin-top: -270px;
-    }
-  }
-
-  @keyframes flip4 {
-    0% {
-      margin-top: -360px;
-    }
-    5% {
-      margin-top: -270px;
+  @keyframes animate {
+    from {
+      content: "Machine Learning";
     }
     25% {
-      margin-top: -270px;
-    }
-    30% {
-      margin-top: -180px;
+      content: "Data Analytics";
     }
     50% {
-      margin-top: -180px;
-    }
-    55% {
-      margin-top: -90px;
+      content: "Data Visualization";
     }
     75% {
-      margin-top: -90px;
+      content: "Web Development";
     }
-    80% {
-      margin-top: 0px;
-    }
-    99.99% {
-      margin-top: 0px;
-    }
-    100% {
-      margin-top: -270px;
+    to {
+      content: "Model Deployment";
     }
   }
 `

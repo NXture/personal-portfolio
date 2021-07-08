@@ -16,14 +16,7 @@ export const Intro = () => {
             I’m Varun Srivathsa. A Student & Freelancer pursuing a career in
             Data Science. I love working on
           </h4>
-          <div>
-            <ul className="flip4">
-              <li>Machine Learning</li>
-              <li>Data Analytics</li>
-              <li>Data Visualization</li>
-              <li>Web Development</li>
-            </ul>
-          </div>
+          <span className="topics"></span>
         </Details>
         <Thumbnail>
           <img src={dev} alt="I’m John and I’m a JAMStack engineer!" />
