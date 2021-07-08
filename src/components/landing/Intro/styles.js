@@ -4,13 +4,13 @@ import overlayIllustration from "assets/illustrations/overlay.svg"
 export const Wrapper = styled.div`
   background-image: url(${overlayIllustration});
   padding-bottom: 3rem;
-  background-size: fill;
+  background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
 `
 
 export const IntroWrapper = styled.div`
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,8 +43,9 @@ export const Details = styled.div`
     }
   }
 
-  h4 {
-    margin-bottom: 2.5rem;
+  h4,
+  .topics {
+    margin-bottom: 0;
     font-size: 32pt;
     font-weight: normal;
     color: ${({ theme }) => (theme === "light" ? "#707070" : "#e6e6e6")};
@@ -57,6 +58,35 @@ export const Details = styled.div`
     @media (max-width: 680px) {
       font-size: 26pt;
     }
+  }
+  .topics:before {
+    content: "";
+    animation: animate infinite 12s;
+  }
+  @keyframes animate {
+    0% {
+      content: "Machine Learning";
+    }
+    20% {
+      content: "Artificial Intelligence";
+    }
+    40% {
+      content: "Data Analytics";
+    }
+    60% {
+      content: "Data Visualization";
+    }
+    80% {
+      content: "Data Curation";
+    }
+    100% {
+      content: "Web Development";
+    }
+  }
+
+  .topics {
+    font-size: 50px;
+    font-weight: bolder;
   }
 `
 
