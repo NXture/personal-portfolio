@@ -26,7 +26,6 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 2;
-  font-family: "Wotfard-regular";
 
   @media (max-width: 960px) {
     width: 100%;

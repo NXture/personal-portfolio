@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-  font-family: "Wotfard-regular";
   padding: 2rem 0;
 `
 

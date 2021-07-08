@@ -22,7 +22,7 @@ export default function PageTemplate({ data: { mdx } }) {
         <div>
           <span>{mdx.frontmatter.date}</span>{" "}
           <span role="img" aria-labelledby="divider">
-            ◾
+            🔰
           </span>{" "}
           <span>{mdx.frontmatter.author}</span>
         </div>
