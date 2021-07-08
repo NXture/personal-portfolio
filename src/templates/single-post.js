@@ -39,6 +39,7 @@ export default function PageTemplate({ data: { mdx } }) {
             {mdx.frontmatter.tags.map(tag => (
               <li
                 style={{
+                  letterSpacing: 1,
                   fontSize: 12,
                   fontWeight: "bolder",
                   backgroundColor: "#ff0066",
