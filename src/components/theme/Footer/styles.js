@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
+  font-family: "Wotfard-regular";
   background-color: #2f2e33;
 
   @media (max-width: 1960px) {

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
+  font-family: "Wotfard-regular";
   padding: 2rem 0;
 `
 
@@ -53,6 +54,7 @@ export const Item = styled.div`
   }
 
   ul li {
+    letter-spacing: 1px;
     font-size: 12px;
     font-weight: bolder;
     background-color: #ff0066;

@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;
+
+  @media (max-width: 680px) {
+    background-size: cover;
+  }
 `
 
 export const IntroWrapper = styled.div`
@@ -22,6 +26,7 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 2;
+  font-family: "Wotfard-regular";
 
   @media (max-width: 960px) {
     width: 100%;
@@ -44,7 +49,7 @@ export const Details = styled.div`
   }
 
   h4,
-  .topics {
+  li {
     margin-bottom: 0;
     font-size: 32pt;
     font-weight: normal;
@@ -59,34 +64,117 @@ export const Details = styled.div`
       font-size: 26pt;
     }
   }
-  .topics:before {
-    content: "";
-    animation: animate infinite 12s;
+  div {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    height: 65px;
+    margin-top: -10px;
+    li {
+      font-size: 50px;
+      font-weight: bolder;
+      padding: 0 0;
+      height: 45px;
+      margin-bottom: 45px;
+      display: block;
+      text-decoration: underline;
+    }
   }
-  @keyframes animate {
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  .flip2 {
+    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  .flip3 {
+    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  .flip4 {
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+
+  @keyframes flip2 {
     0% {
-      content: "Machine Learning";
+      margin-top: -180px;
     }
-    20% {
-      content: "Artificial Intelligence";
+    5% {
+      margin-top: -90px;
     }
-    40% {
-      content: "Data Analytics";
+    50% {
+      margin-top: -90px;
     }
-    60% {
-      content: "Data Visualization";
+    55% {
+      margin-top: 0px;
     }
-    80% {
-      content: "Data Curation";
+    99.99% {
+      margin-top: 0px;
     }
     100% {
-      content: "Web Development";
+      margin-top: -270px;
     }
   }
 
-  .topics {
-    font-size: 50px;
-    font-weight: bolder;
+  @keyframes flip3 {
+    0% {
+      margin-top: -270px;
+    }
+    5% {
+      margin-top: -180px;
+    }
+    33% {
+      margin-top: -180px;
+    }
+    38% {
+      margin-top: -90px;
+    }
+    66% {
+      margin-top: -90px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+
+  @keyframes flip4 {
+    0% {
+      margin-top: -360px;
+    }
+    5% {
+      margin-top: -270px;
+    }
+    25% {
+      margin-top: -270px;
+    }
+    30% {
+      margin-top: -180px;
+    }
+    50% {
+      margin-top: -180px;
+    }
+    55% {
+      margin-top: -90px;
+    }
+    75% {
+      margin-top: -90px;
+    }
+    80% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
   }
 `
 
