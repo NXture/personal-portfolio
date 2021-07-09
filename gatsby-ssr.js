@@ -10,8 +10,6 @@ import { MDXProvider } from "@mdx-js/react"
 import { Code } from "./src/CodeBlock"
 import { preToCodeBlock } from "mdx-utils"
 
-export const onServiceWorkerUpdateReady = () => window.location.reload(true)
-
 const components = {
   pre: preProps => {
     const props = preToCodeBlock(preProps)
