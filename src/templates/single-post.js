@@ -2,9 +2,10 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Layout, Container, Seo } from "components/common"
+import { Layout, Seo } from "components/common"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { slugify } from "utils/utilityFunctions"
+import styled from "styled-components"
 
 const shortcodes = { Link } // Provide common components here
 
@@ -17,8 +18,8 @@ export default function PageTemplate({ data: { mdx } }) {
         image={mdx.frontmatter.featureImage.childImageSharp.gatsbyImageData}
         alt="feature images"
       />
-      <Container>
-        <h1 style={{ marginTop: "4%" }}>{mdx.frontmatter.title}</h1>
+      <PostContainer>
+        <h1>{mdx.frontmatter.title}</h1>
         <div>
           <span>{mdx.frontmatter.date}</span>{" "}
           <span role="img" aria-labelledby="divider">
@@ -26,32 +27,13 @@ export default function PageTemplate({ data: { mdx } }) {
           </span>{" "}
           <span>{mdx.frontmatter.author}</span>
         </div>
-        <hr style={{ margin: "4px 0px" }} />
+        <hr />
         <div>
-          <ul
-            style={{
-              listStyleType: "none",
-              display: "flex",
-              justifyContent: "flex-start",
-              marginLeft: "0px",
-            }}
-          >
+          <ul>
             {mdx.frontmatter.tags.map(tag => (
-              <li
-                style={{
-                  letterSpacing: 1,
-                  fontSize: 12,
-                  fontWeight: "bolder",
-                  backgroundColor: "#ff0066",
-                  borderRadius: 5,
-                  padding: "3px 6px",
-                  margin: "5px",
-                  boxShadow: "rgba(149, 157, 165, 0.8) 2px 2px 1px",
-                }}
-                key={tag}
-              >
+              <li key={tag}>
                 <Link to={`/tag/${slugify(tag)}`}>
-                  <span style={{ color: "#fff" }}>{tag}</span>
+                  <span>{tag}</span>
                 </Link>
               </li>
             ))}
@@ -61,10 +43,46 @@ export default function PageTemplate({ data: { mdx } }) {
         <MDXProvider components={shortcodes}>
           <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
         </MDXProvider>
-      </Container>
+      </PostContainer>
     </Layout>
   )
 }
+
+//Styled Components
+const PostContainer = styled.div`
+  margin: 0% 20%;
+  h1 {
+    margin-top: 4%;
+  }
+
+  hr {
+    margin: 4px 0px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+    li {
+      letter-spacing: 1;
+      font-size: 12px;
+      font-weight: bolder;
+      background-color: #ff0066;
+      border-radius: 5px;
+      padding: 3px 6px;
+      margin: 5px;
+      box-shadow: rgba(149, 157, 165, 0.8) 2px 2px 1px;
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 880px) {
+    margin: 0% 5%;
+  }
+`
 
 export const pageQuery = graphql`
   query BlogPostQuery($id: String) {

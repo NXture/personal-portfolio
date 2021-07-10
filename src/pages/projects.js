@@ -7,7 +7,6 @@ const ProjectsPage = () => {
     <Layout>
       <Seo />
       <Projects />
-      <Contact/>
     </Layout>
   )
 }
