@@ -1,5 +1,5 @@
 import React from "react"
-import { Contact, Projects } from "components/landing"
+import {  Projects } from "components/landing"
 import { Layout, Seo } from "components/common"
 
 const ProjectsPage = () => {
