@@ -1,13 +1,11 @@
 import React from "react"
 import { Layout, Seo } from "components/common"
-import { Intro, Skills } from "components/landing"
-import TagsList from "components/tags"
-
+import { Intro, Skills, RecentPosts } from "components/landing"
 const Home = () => (
   <Layout>
     <Seo />
     <Intro />
-    <TagsList />
+    <RecentPosts />
     <Skills />
   </Layout>
 )

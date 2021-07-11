@@ -53,7 +53,7 @@ export const Blogs = () => {
               <div style={{ marginBottom: 5 }}>
                 <span>{post.frontmatter.date}</span>{" "}
                 <span role="img" aria-labelledby="divider">
-                  🔰
+                  ◾
                 </span>{" "}
                 <span>{post.frontmatter.author}</span>
               </div>
