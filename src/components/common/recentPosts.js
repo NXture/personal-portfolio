@@ -14,6 +14,24 @@ export const TopPosts = () => {
         query={recentPostsQuery}
         render={data => (
           <Grid>
+            <Item theme={theme}>
+              <Card theme={theme}>
+                <Info>
+                  <div>
+                    <h3>Following are my recent blogs!</h3>
+                    <p>
+                      I write a lot more about Data Science, Statistics,
+                      Programming, Machine Learning & some more related topic.
+                    </p>
+                    <Link to="/blogs">
+                      <p>
+                        <span>Click here for more!</span>
+                      </p>
+                    </Link>
+                  </div>
+                </Info>
+              </Card>
+            </Item>
             {data.allMdx.edges.map(({ node }) => (
               <Item key={node.id} theme={theme}>
                 <GatsbyImage
@@ -48,24 +66,6 @@ export const TopPosts = () => {
                 </Card>
               </Item>
             ))}
-            <Item theme={theme}>
-              <Card theme={theme}>
-                <Info>
-                  <div>
-                    <h3>Following were my recent blogs!</h3>
-                    <p>
-                      I write a lot more about Data Science, Statistics,
-                      Programming, Machine Learning & some more related topic.
-                    </p>
-                    <Link to="/blogs">
-                      <p>
-                        <span>Click here for more!</span>
-                      </p>
-                    </Link>
-                  </div>
-                </Info>
-              </Card>
-            </Item>
           </Grid>
         )}
       />
