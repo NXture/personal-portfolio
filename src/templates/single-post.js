@@ -5,11 +5,19 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Layout, Seo } from "components/common"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { slugify } from "utils/utilityFunctions"
+import { Disqus } from "gatsby-plugin-disqus"
 import styled from "styled-components"
 
 const shortcodes = { Link } // Provide common components here
 
-export default function PageTemplate({ data: { mdx } }) {
+export default function PageTemplate({ data: { mdx }, pageContext }) {
+  const siteUrl = "https://metarules.tech"
+
+  const DisqusConfig = {
+    url: siteUrl + pageContext.slug,
+    identifier: mdx.id,
+    title: mdx.frontmatter.title,
+  }
   return (
     <Layout>
       <Seo />
@@ -43,6 +51,9 @@ export default function PageTemplate({ data: { mdx } }) {
         <MDXProvider components={shortcodes}>
           <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
         </MDXProvider>
+        <div style={{ marginTop: "10%" }}>
+          <Disqus config={DisqusConfig} />
+        </div>
       </PostContainer>
     </Layout>
   )
