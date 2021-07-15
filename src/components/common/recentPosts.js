@@ -92,7 +92,6 @@ const Info = styled.div`
   }
 
   p span {
-    color: white;
     text-decoration: underline;
     &:hover {
       color: #007bff;

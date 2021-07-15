@@ -16,18 +16,20 @@ const TagsList = () => {
   `)
   return (
     <Wrapper>
-      <h4>TOP CATEGORIES</h4>
-      <ul>
-        {data.allMdx.group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tag/${slugify(tag.fieldValue)}`}>
-              <span>
-                {tag.fieldValue} <Count>{tag.totalCount}</Count>
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div style={{ position: "sticky", top: 20 }}>
+        <h4>TOP CATEGORIES</h4>
+        <ul>
+          {data.allMdx.group.map(tag => (
+            <li key={tag.fieldValue}>
+              <Link to={`/tag/${slugify(tag.fieldValue)}`}>
+                <span>
+                  {tag.fieldValue} <Count>{tag.totalCount}</Count>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </Wrapper>
   )
 }
