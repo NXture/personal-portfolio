@@ -30,7 +30,7 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
         <h1>{mdx.frontmatter.title}</h1>
         <div>
           <span>{mdx.frontmatter.date}</span>{" "}
-          <span role="img" aria-labelledby="divider">
+          <span role="img" aria-labelledby="white square">
             ▫️
           </span>{" "}
           <span>{mdx.frontmatter.author}</span>

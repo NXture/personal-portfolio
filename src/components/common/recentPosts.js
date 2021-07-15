@@ -44,7 +44,7 @@ export const TopPosts = () => {
                 <Card theme={theme}>
                   <div style={{ marginBottom: 5 }}>
                     <span>{node.frontmatter.date}</span>{" "}
-                    <span role="img" aria-labelledby="divider">
+                    <span role="img" aria-labelledby="black square">
                       ◾
                     </span>{" "}
                     <span>{node.frontmatter.author}</span>
