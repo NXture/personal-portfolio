@@ -46,7 +46,7 @@ const Wrapper = styled.div`
     li {
       letter-spacing: 1px;
       font-size: 14px;
-      font-weight: bolder;
+      font-weight: normal;
       background-color: #ff0066;
       border-radius: 5px;
       padding: 4px 6px;

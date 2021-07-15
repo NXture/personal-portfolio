@@ -84,7 +84,7 @@ const Tags = styled.ul`
   li {
     letter-spacing: 1;
     font-size: 12px;
-    font-weight: bolder;
+    font-weight: normal;
     background-color: #ff0066;
     border-radius: 5px;
     padding: 3px 6px;
