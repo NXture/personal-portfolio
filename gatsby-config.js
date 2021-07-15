@@ -15,6 +15,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-PN9ML22",
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: "gatsby-source-graphql",
       options: {
         typeName: "GitHub",
