@@ -23,13 +23,13 @@ export default function PageTemplate({ data: { mdx } }) {
         <div>
           <span>{mdx.frontmatter.date}</span>{" "}
           <span role="img" aria-labelledby="divider">
-            🔰
+            ▫️
           </span>{" "}
           <span>{mdx.frontmatter.author}</span>
         </div>
         <hr />
         <div>
-          <ul>
+          <Tags>
             {mdx.frontmatter.tags.map(tag => (
               <li key={tag}>
                 <Link to={`/tag/${slugify(tag)}`}>
@@ -37,7 +37,7 @@ export default function PageTemplate({ data: { mdx } }) {
                 </Link>
               </li>
             ))}
-          </ul>
+          </Tags>
         </div>
 
         <MDXProvider components={shortcodes}>
@@ -59,28 +59,29 @@ const PostContainer = styled.div`
     margin: 4px 0px;
   }
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0px;
-    li {
-      letter-spacing: 1;
-      font-size: 12px;
-      font-weight: bolder;
-      background-color: #ff0066;
-      border-radius: 5px;
-      padding: 3px 6px;
-      margin: 5px;
-      box-shadow: rgba(149, 157, 165, 0.8) 2px 2px 1px;
-      span {
-        color: #fff;
-      }
-    }
-  }
-
   @media (max-width: 880px) {
     margin: 0% 5%;
+  }
+`
+
+const Tags = styled.ul`
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0px;
+
+  li {
+    letter-spacing: 1;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #ff0066;
+    border-radius: 5px;
+    padding: 3px 6px;
+    margin: 5px;
+    box-shadow: rgba(149, 157, 165, 0.8) 2px 2px 1px;
+    span {
+      color: #fff;
+    }
   }
 `
 
