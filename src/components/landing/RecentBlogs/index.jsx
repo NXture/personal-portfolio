@@ -1,28 +1,30 @@
 import React from "react"
 import styled from "styled-components"
-import { TopPosts, TagsList } from "components/common"
+import { Recent, TagsList } from "components/common"
 
 export const RecentPosts = () => {
   return (
     <Wrapper>
-      <TopPosts />
-      <TagsList />
+      <Container>
+        <Recent />
+        <TagsList />
+      </Container>
     </Wrapper>
   )
 }
 
-const Wrapper = styled.div`
-  padding: 2rem 0rem;
+//Styled Components
+
+const Container = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0% 5%;
+  min-width: 10rem;
+  max-width: 80rem;
+`
 
-  @media (max-width: 960px) {
-    margin: 0%;
-  }
-
-  @media (max-width: 680px) {
-    margin: 0%;
-  }
+const Wrapper = styled.div`
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: center;
 `

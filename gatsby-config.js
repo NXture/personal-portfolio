@@ -9,7 +9,7 @@ module.exports = {
     title: config.defaultTitle,
     description: config.defaultDescription,
     author: config.author,
-    siteUrl: `https://www.metarules.tech`,
+    siteUrl: config.url,
   },
   flags: {
     DEV_SSR: false,

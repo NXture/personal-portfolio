@@ -44,7 +44,7 @@ const Wrapper = styled.div`
     justify-content: flex-start;
     flex-wrap: wrap;
     li {
-      letter-spacing: 1px;
+      //letter-spacing: 1px;
       font-size: 14px;
       font-weight: normal;
       background-color: #ff0066;
@@ -69,4 +69,3 @@ const Count = styled.span`
   padding: 1px 4px;
   border-radius: 4px;
 `
-

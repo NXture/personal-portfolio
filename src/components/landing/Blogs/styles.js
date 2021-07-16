@@ -53,7 +53,6 @@ export const Item = styled.div`
   }
 
   ul li {
-    letter-spacing: 1px;
     font-size: 12px;
     font-weight: normal;
     background-color: #ff0066;

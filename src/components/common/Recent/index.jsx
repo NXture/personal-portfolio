@@ -5,7 +5,7 @@ import { ThemeContext } from "providers/ThemeProvider"
 import { Container, Card } from ".."
 import styled from "styled-components"
 
-export const TopPosts = () => {
+export const Recent = () => {
   const { theme } = useContext(ThemeContext)
   return (
     <Wrapper as={Container}>
@@ -146,23 +146,6 @@ const Item = styled.div`
   p,
   .readMore {
     color: ${({ theme }) => (theme === "light" ? "#707070" : "#c7c7c7")};
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  ul li {
-    letter-spacing: 1px;
-    font-size: 12px;
-    font-weight: normal;
-    background-color: #ff0066;
-    border-radius: 5px;
-    padding: 3px 6px;
-    margin: 5px;
-    box-shadow: rgba(149, 157, 165, 0.8) 2px 2px 1px;
   }
 `
 
