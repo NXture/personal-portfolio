@@ -43,12 +43,14 @@ export const Blogs = () => {
       <Grid>
         {posts.map(({ node: post }) => (
           <Item key={post.id} theme={theme}>
-            <GatsbyImage
-              image={
-                post.frontmatter.featureImage.childImageSharp.gatsbyImageData
-              }
-              alt="feature images"
-            />
+            <Link to={post.fields.slug}>
+              <GatsbyImage
+                image={
+                  post.frontmatter.featureImage.childImageSharp.gatsbyImageData
+                }
+                alt="feature images"
+              />
+            </Link>
             <Card theme={theme}>
               <div style={{ marginBottom: 5 }}>
                 <span>{post.frontmatter.date}</span>{" "}
@@ -57,7 +59,7 @@ export const Blogs = () => {
                 </span>{" "}
                 <span>{post.frontmatter.author}</span>
               </div>
-              <hr style={{ margin: "4px 0px" }} />
+              <hr style={{ margin: "4px 0px", backgroundColor: "GrayText" }} />
               <Link to={post.fields.slug}>
                 <h2>{post.frontmatter.title}</h2>
               </Link>

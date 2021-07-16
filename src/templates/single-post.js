@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Layout, Seo } from "components/common"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { slugify } from "utils/utilityFunctions"
 import { Disqus } from "gatsby-plugin-disqus"
 import styled from "styled-components"
@@ -28,25 +28,38 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
       />
       <PostContainer>
         <h1>{mdx.frontmatter.title}</h1>
-        <div>
-          <span>{mdx.frontmatter.date}</span>{" "}
-          <span role="img" aria-labelledby="white square">
-            ▫️
-          </span>{" "}
-          <span>{mdx.frontmatter.author}</span>
-        </div>
-        <hr />
-        <div>
-          <Tags>
-            {mdx.frontmatter.tags.map(tag => (
-              <li key={tag}>
-                <Link to={`/tag/${slugify(tag)}`}>
-                  <span>{tag}</span>
-                </Link>
-              </li>
-            ))}
-          </Tags>
-        </div>
+        <Profile>
+          <div style={{ alignItems: "center" }}>
+            <StaticImage
+              className="profile_img"
+              width={50}
+              height={50}
+              src="../images/varun_profile_posts.jpg"
+              alt="profile"
+            />
+          </div>
+          <div>
+            <div>
+              <span>{mdx.frontmatter.date}</span>{" "}
+              <span role="img" aria-labelledby="white square">
+                ▫️
+              </span>{" "}
+              <span>{mdx.frontmatter.author}</span>
+            </div>
+            <hr />
+            <div>
+              <Tags>
+                {mdx.frontmatter.tags.map(tag => (
+                  <li key={tag}>
+                    <Link to={`/tag/${slugify(tag)}`}>
+                      <span>{tag}</span>
+                    </Link>
+                  </li>
+                ))}
+              </Tags>
+            </div>
+          </div>
+        </Profile>
 
         <MDXProvider components={shortcodes}>
           <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
@@ -60,6 +73,21 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
 }
 
 //Styled Components
+const Profile = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  grid-gap: 0px;
+
+  .profile_img {
+    min-width: 50px;
+    border-radius: 50%;
+    margin-left: 5%;
+  }
+  @media (max-width: 960px) {
+    grid-gap: 4px;
+  }
+`
+
 const PostContainer = styled.div`
   margin: 0% 20%;
   h1 {
@@ -67,6 +95,7 @@ const PostContainer = styled.div`
   }
 
   hr {
+    background-color: gray;
     margin: 4px 0px;
   }
 

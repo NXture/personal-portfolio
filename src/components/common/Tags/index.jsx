@@ -3,7 +3,7 @@ import { slugify } from "utils/utilityFunctions"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import styled from "styled-components"
 
-const TagsList = () => {
+export const TagsList = () => {
   const data = useStaticQuery(graphql`
     query allTags {
       allMdx {
@@ -70,4 +70,3 @@ const Count = styled.span`
   border-radius: 4px;
 `
 
-export default TagsList

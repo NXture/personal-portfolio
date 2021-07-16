@@ -2,9 +2,8 @@ import React, { useContext } from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { ThemeContext } from "providers/ThemeProvider"
-import { Container, Card } from "."
+import { Container, Card } from ".."
 import styled from "styled-components"
-import { slugify } from "utils/utilityFunctions"
 
 export const TopPosts = () => {
   const { theme } = useContext(ThemeContext)
@@ -34,13 +33,15 @@ export const TopPosts = () => {
             </Item>
             {data.allMdx.edges.map(({ node }) => (
               <Item key={node.id} theme={theme}>
-                <GatsbyImage
-                  image={
-                    node.frontmatter.featureImage.childImageSharp
-                      .gatsbyImageData
-                  }
-                  alt="feature images"
-                />
+                <Link to={node.fields.slug}>
+                  <GatsbyImage
+                    image={
+                      node.frontmatter.featureImage.childImageSharp
+                        .gatsbyImageData
+                    }
+                    alt="feature images"
+                  />
+                </Link>
                 <Card theme={theme}>
                   <div style={{ marginBottom: 5 }}>
                     <span>{node.frontmatter.date}</span>{" "}
@@ -49,20 +50,19 @@ export const TopPosts = () => {
                     </span>{" "}
                     <span>{node.frontmatter.author}</span>
                   </div>
-                  <hr style={{ margin: "4px 0px" }} />
+                  <hr
+                    style={{ margin: "4px 0px", backgroundColor: "GrayText" }}
+                  />
                   <Link to={node.fields.slug}>
                     <h2>{node.frontmatter.title}</h2>
                   </Link>
                   <p>{node.frontmatter.description}</p>
-                  <ul>
-                    {node.frontmatter.tags.map(tag => (
-                      <li key={tag}>
-                        <Link to={`/tag/${slugify(tag)}`}>
-                          <span className="tag">{tag}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  <Link
+                    to={node.fields.slug}
+                    style={{ textDecoration: "underline" }}
+                  >
+                    Read More
+                  </Link>
                 </Card>
               </Item>
             ))}

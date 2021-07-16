@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import TagsList from "components/common/tags"
-import { TopPosts } from "components/common/recentPosts"
+import { TopPosts, TagsList } from "components/common"
 
 export const RecentPosts = () => {
   return (
