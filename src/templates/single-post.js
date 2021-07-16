@@ -32,8 +32,6 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
           <div style={{ alignItems: "center" }}>
             <StaticImage
               className="profile_img"
-              width={50}
-              height={50}
               src="../images/varun_profile_posts.jpg"
               alt="profile"
             />
@@ -80,6 +78,7 @@ const Profile = styled.div`
 
   .profile_img {
     min-width: 50px;
+    max-width: 60px;
     border-radius: 50%;
     margin-left: 5%;
   }

@@ -57,11 +57,8 @@ export const TopPosts = () => {
                     <h2>{node.frontmatter.title}</h2>
                   </Link>
                   <p>{node.frontmatter.description}</p>
-                  <Link
-                    to={node.fields.slug}
-                    style={{ textDecoration: "underline" }}
-                  >
-                    Read More
+                  <Link to={node.fields.slug}>
+                    <span className="readMore">Read More</span>
                   </Link>
                 </Card>
               </Item>
@@ -77,6 +74,14 @@ export const TopPosts = () => {
 const Wrapper = styled.div`
   padding: 0rem 2rem;
   width: 60%;
+
+  .readMore {
+    text-decoration: underline;
+    &:hover {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
 
   @media (max-width: 960px) {
     width: 100%;
@@ -138,7 +143,8 @@ const Item = styled.div`
     }
   }
 
-  p {
+  p,
+  .readMore {
     color: ${({ theme }) => (theme === "light" ? "#707070" : "#c7c7c7")};
   }
 
