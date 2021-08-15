@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   @media (max-width: 960px) {
-    padding-top: 17px;
+    padding-top: 15px;
   }
 `
 

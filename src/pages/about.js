@@ -1,6 +1,5 @@
 import React from "react"
 import { Layout, Container, Seo } from "components/common"
-import { Contact } from "components/landing"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
@@ -60,7 +59,13 @@ const About = () => {
             </div>
           </Section>
         </div>
-        <Contact />
+        <hr style={{ backgroundColor: "GrayText" }} />
+        <div>
+          <p style={{ color: "tomato" }}>
+            Sorry! Their was an issue with the contact form, well be fixed &
+            added soon again.
+          </p>
+        </div>
       </Container>
     </Layout>
   )

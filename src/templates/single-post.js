@@ -11,7 +11,7 @@ import styled from "styled-components"
 const shortcodes = { Link } // Provide common components here
 
 export default function PageTemplate({ data: { mdx }, pageContext }) {
-  const siteUrl = "https://metarules.tech"
+  const siteUrl = "https://varunsrivasta.dev"
 
   const DisqusConfig = {
     url: siteUrl + pageContext.slug,
