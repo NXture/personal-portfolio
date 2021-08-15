@@ -53,13 +53,13 @@ export const Item = styled.div`
   }
 
   ul li {
-    font-size: 12px;
+    letter-spacing: 1px;
+    font-size: 14px;
     font-weight: normal;
     background-color: #ff0066;
     border-radius: 5px;
     padding: 3px 6px;
     margin: 5px;
-    box-shadow: rgba(149, 157, 165, 0.8) 2px 2px 1px;
   }
 `
 

@@ -44,14 +44,13 @@ const Wrapper = styled.div`
     justify-content: flex-start;
     flex-wrap: wrap;
     li {
-      //letter-spacing: 1px;
+      letter-spacing: 1px;
       font-size: 14px;
       font-weight: normal;
       background-color: #ff0066;
       border-radius: 5px;
       padding: 4px 6px;
       margin: 5px;
-      box-shadow: rgba(149, 157, 165, 0.8) 2px 2px 1px;
       span {
         color: #fff;
       }
