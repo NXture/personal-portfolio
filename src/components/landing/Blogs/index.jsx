@@ -3,7 +3,7 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import { ThemeContext } from "providers/ThemeProvider"
 import { Container, Card } from "components/common"
 import { Wrapper, Grid, Item } from "./styles"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { slugify } from "utils/utilityFunctions"
 
 export const Blogs = () => {
@@ -54,9 +54,14 @@ export const Blogs = () => {
             <Card theme={theme}>
               <div style={{ marginBottom: 5 }}>
                 <span>{post.frontmatter.date}</span>{" "}
-                <span role="img" aria-labelledby="black square">
-                  ◾
-                </span>{" "}
+                <StaticImage
+                  quality="100"
+                  placeholder="tracedSVG"
+                  width={20}
+                  height={20}
+                  src="./divider.svg"
+                  alt="divider"
+                />{" "}
                 <span>{post.frontmatter.author}</span>
               </div>
               <hr style={{ margin: "4px 0px", backgroundColor: "GrayText" }} />

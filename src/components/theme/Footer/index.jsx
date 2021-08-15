@@ -7,7 +7,7 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>Varun Srivasta</h2>
+        <h2>Varun Srivasta - dev</h2>
         <p>
           This site uses <span>cookies</span>. Please hit back button if you're
           not happy about that!

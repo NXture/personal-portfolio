@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { Link, graphql, StaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { ThemeContext } from "providers/ThemeProvider"
 import { Container, Card } from ".."
 import styled from "styled-components"
@@ -45,9 +45,14 @@ export const Recent = () => {
                 <Card theme={theme}>
                   <div style={{ marginBottom: 5 }}>
                     <span>{node.frontmatter.date}</span>{" "}
-                    <span role="img" aria-labelledby="black square">
-                      ◾
-                    </span>{" "}
+                    <StaticImage
+                      quality="100"
+                      placeholder="tracedSVG"
+                      width={20}
+                      height={20}
+                      src="../Icons/divider.svg"
+                      alt="divider"
+                    />{" "}
                     <span>{node.frontmatter.author}</span>
                   </div>
                   <hr

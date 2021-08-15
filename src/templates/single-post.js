@@ -40,9 +40,14 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
           <div>
             <div>
               <span>{mdx.frontmatter.date}</span>{" "}
-              <span role="img" aria-labelledby="white square">
-                ▫️
-              </span>{" "}
+              <StaticImage
+                quality="100"
+                placeholder="tracedSVG"
+                width={20}
+                height={20}
+                src="../images/svg/divider.svg"
+                alt="divider"
+              />{" "}
               <span>{mdx.frontmatter.author}</span>
             </div>
             <hr />
