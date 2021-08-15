@@ -77,7 +77,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: `minimal-ui`,
-        icon: `static/favicon/icon.png`, // This path is relative to the root of the site.
+        icon: `static/favicon/icon.svg`, // This path is relative to the root of the site.
       },
     },
     {

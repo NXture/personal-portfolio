@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
 `
 
 export const Brand = styled.a`
-  font-size: 20px;
   letter-spacing: 2px;
   color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
 
