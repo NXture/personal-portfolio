@@ -8,7 +8,10 @@ export const Footer = () => (
     <Flex as={Container}>
       <Details>
         <h2>Varun Srivasta - dev</h2>
-        <p>
+        <p style={{ paddingTop: "5%" }}>
+          <span style={{ color: "tomato", textDecoration: "underline" }}>
+            Attention:
+          </span>{" "}
           This site uses <span>cookies</span>. Please hit back button if you're
           not happy about that!
         </p>
