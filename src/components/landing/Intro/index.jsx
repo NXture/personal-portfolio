@@ -12,9 +12,10 @@ export const Intro = () => {
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h1>Hi There!</h1>
+          <h4>I’m Varun Srivatsa. </h4>
           <h4>
-            I’m Varun Srivathsa. A Student & Freelancer pursuing a career in
-            Data Science. I love working on
+            A Student & Freelancer pursuing a career in Data Science. I love
+            working on
           </h4>
           <span className="topics"></span>
         </Details>

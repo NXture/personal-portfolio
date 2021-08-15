@@ -13,7 +13,7 @@ export const Footer = () => (
           <span aria-label="love" role="img">
             💖
           </span>{" "}
-          by Varun Srivathsa
+          by Varun Srivatsa
         </span>
       </Details>
       <Links>
