@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 960px) {
+    padding-top: 17px;
+  }
 `
 
 export const Brand = styled.a`

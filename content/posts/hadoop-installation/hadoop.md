@@ -1,7 +1,7 @@
 ---
 title: "How to install Hadoop on Windows 10 using WSL"
 date: 2021-04-20
-author: "Varun Srivathsa"
+author: "Varun Srivatsa"
 tags:
   - Big Data
   - Tutorial

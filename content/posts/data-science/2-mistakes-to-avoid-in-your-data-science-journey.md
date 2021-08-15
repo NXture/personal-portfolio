@@ -1,7 +1,7 @@
 ---
 title: "2 mistakes to avoid in your data science learning journey 🙅‍♂️"
 date: 2021-06-03
-author: "Varun Srivathsa"
+author: "Varun Srivatsa"
 tags:
   - Data Science
 description: "Ever since I started my data science learning journey, I feel like I've accomplished a great deal of stuff. Amidst those accomplishments, I also see some mistakes that shine crystal clear."

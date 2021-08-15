@@ -32,8 +32,9 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
           <div style={{ alignItems: "center" }}>
             <StaticImage
               className="profile_img"
+              quality="100"
               src="../images/varun_profile_posts.jpg"
-              alt="profile"
+              alt="varun srivasta"
             />
           </div>
           <div>

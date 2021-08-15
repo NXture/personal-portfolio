@@ -1,7 +1,7 @@
 ---
 title: "What are the roles and teams in data science"
 date: 2021-04-24
-author: "Varun Srivathsa"
+author: "Varun Srivatsa"
 tags:
   - Data Science
   - Big Data

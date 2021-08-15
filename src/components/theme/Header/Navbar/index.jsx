@@ -14,6 +14,7 @@ const Navbar = () => {
       <Brand as={Link} to="/" theme={theme}>
         <div style={{ display: "flex" }}>
           <StaticImage
+            placeholder="tracedSVG"
             quality="100"
             width={40}
             height={40}
