@@ -22,12 +22,13 @@ export const Wrapper = styled.div`
   margin-bottom: 2%;
 
   p {
+    font-weight: bold;
     margin-bottom: 0px;
     margin-left: 10px;
   }
 
   @media (max-width: 960px) {
-    margin: 0% 5%;
+    margin: 0% 3%;
   }
 `
 

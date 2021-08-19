@@ -54,7 +54,7 @@ export const Item = styled.div`
 
   ul li {
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #ff0066;
     padding: 3px 6px;
     margin: 5px;
