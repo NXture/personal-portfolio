@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Gatsby",
+    "icon": "/icons/stack/gatsby.svg"
+  },
+  {
+    "id": 1,
+    "name": "markdown",
+    "icon": "/icons/stack/markdown.svg"
+  },
+  {
+    "id": 2,
+    "name": "graphql",
+    "icon": "/icons/stack/graphql.svg"
+  },
+  {
+    "id": 3,
+    "name": "git",
+    "icon": "/icons/stack/git.svg"
+  },
+  {
+    "id": 4,
+    "name": "nodejs",
+    "icon": "/icons/stack/nodejs.svg"
+  },
+  {
+    "id": 5,
+    "name": "netlify",
+    "icon": "/icons/stack/netlify.svg"
+  }
+]

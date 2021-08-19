@@ -8,7 +8,7 @@ export const Footer = () => (
     <Flex as={Container}>
       <Details>
         <h2>
-          Varun Srivasta - Developer{" "}
+          Varun Srivasta | Developer{" "}
           <span aria-label="developer" role="img">
             👨‍💻
           </span>

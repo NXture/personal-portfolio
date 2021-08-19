@@ -8,7 +8,7 @@ const About = () => {
     <Layout>
       <Seo />
       <Container>
-        <div style={{ margin: "2% 0% 4% 4%" }}>
+        <div style={{ marginBottom: "4%" }}>
           <h1>About Me</h1>
           <Section
             style={{

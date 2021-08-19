@@ -24,7 +24,7 @@ export const Recent = () => {
                     </p>
                     <Link to="/blogs">
                       <p>
-                        <span>Click here for more!</span>
+                        <span>Click here for more</span>
                       </p>
                     </Link>
                   </div>
