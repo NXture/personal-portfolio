@@ -48,11 +48,10 @@ const Wrapper = styled.div`
       font-size: 14px;
       font-weight: normal;
       background-color: #ff0066;
-      border-radius: 5px;
-      padding: 4px 6px;
+      padding: 3px 6px;
       margin: 5px;
       span {
-        color: #fff;
+        color: white;
       }
     }
   }
@@ -64,7 +63,7 @@ const Wrapper = styled.div`
 
 const Count = styled.span`
   font-size: small;
+  font-weight: bold;
   background-color: #2f2e41;
   padding: 1px 4px;
-  border-radius: 4px;
 `

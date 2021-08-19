@@ -74,12 +74,13 @@ export const Details = styled.div`
     font-size: 45px;
     font-weight: bolder;
     letter-spacing: 1px;
-    text-decoration:underline ;
-    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) =>
-        theme === "light" ? "unset" : "difference"};
+    background: yellow;
+    color: black;
+    @media (max-width: 680px) {
+      font-size: 26pt;
+    }
+    @media (max-width: 320px) {
+      font-size: 20pt;
     }
   }
 

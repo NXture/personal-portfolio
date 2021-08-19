@@ -41,10 +41,9 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
             <div>
               <span>{mdx.frontmatter.date}</span>{" "}
               <StaticImage
-                quality="100"
                 placeholder="tracedSVG"
-                width={20}
-                height={20}
+                width={18}
+                height={18}
                 src="../images/svg/divider.svg"
                 alt="divider"
               />{" "}
@@ -117,11 +116,10 @@ const Tags = styled.ul`
 
   li {
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     background-color: #ff0066;
-    border-radius: 5px;
-    padding: 3px 6px;
+    padding: 2px 4px;
     margin: 5px;
     span {
       color: #fff;

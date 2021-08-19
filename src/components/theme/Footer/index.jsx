@@ -7,9 +7,14 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>Varun Srivasta - dev</h2>
+        <h2>
+          Varun Srivasta - Developer{" "}
+          <span aria-label="developer" role="img">
+            👨‍💻
+          </span>
+        </h2>
         <p style={{ paddingTop: "5%" }}>
-          <span style={{ color: "tomato", textDecoration: "underline" }}>
+          <span style={{ color: "black", backgroundColor: "yellow" }}>
             Attention:
           </span>{" "}
           This site uses <span>cookies</span>. Please hit back button if you're
