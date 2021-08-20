@@ -16,8 +16,8 @@ const Navbar = () => {
           <StaticImage
             placeholder="tracedSVG"
             quality="100"
-            width={40}
-            height={40}
+            width={38}
+            height={38}
             src="./logo.svg"
             alt="logo"
           />

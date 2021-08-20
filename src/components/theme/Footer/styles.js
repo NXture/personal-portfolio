@@ -37,6 +37,10 @@ export const Links = styled.div`
       margin: 0;
     }
   }
+
+  @media (max-width: 680px) {
+    justify-content: center;
+  }
 `
 
 export const Details = styled.div`

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "name": "Github",
+    "link": "https://github.com/nxture",
+    "icon": "/icons/findme/github.svg"
+  },
+  {
+    "id": 1,
+    "name": "Medium",
+    "link": "https://medium.com/@varunsrivatsa27",
+    "icon": "/icons/findme/medium.svg"
+  },
+  {
+    "id": 3,
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/in/varunsrivatsa/",
+    "icon": "/icons/findme/linkedin.svg"
+  }
+]

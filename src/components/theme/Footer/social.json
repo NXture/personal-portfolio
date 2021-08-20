@@ -1,12 +1,18 @@
 [
   {
     "id": 0,
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/in/varunsrivatsa/",
+    "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 1,
     "name": "Telegram",
     "link": "https://t.me/varun27101",
     "icon": "/icons/telegram.svg"
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "Github",
     "link": "https://github.com/nxture",
     "icon": "/icons/github.svg"
@@ -16,5 +22,11 @@
     "name": "Twitter",
     "link": "https://twitter.com/varunVarun2710",
     "icon": "/icons/twitter.svg"
+  },
+  {
+    "id": 5,
+    "name": "Medium",
+    "link": "https://medium.com/@varunsrivatsa27",
+    "icon": "/icons/medium.svg"
   }
 ]

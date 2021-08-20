@@ -55,7 +55,7 @@ export const Details = styled.div`
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) =>
-        theme === "light" ? "unset" : "difference"};
+        theme === "light" ? "difference" : "difference"};
     }
 
     @media (max-width: 680px) {
@@ -70,7 +70,6 @@ export const Details = styled.div`
   }
 
   .topics {
-    position: absolute;
     font-size: 45px;
     font-weight: bolder;
     letter-spacing: 1px;
@@ -109,10 +108,31 @@ export const Thumbnail = styled.div`
   justify-content: center;
 
   @media (max-width: 960px) {
+    img {
+      margin-top: 25px;
+    }
+
     width: 100%;
   }
 
   img {
     width: 80%;
+  }
+`
+export const Links = styled.div`
+  display: flex;
+  align-items: center;
+
+  a {
+    margin: 0 0.5rem;
+
+    img {
+      margin: 0;
+    }
+
+    &:first-child,
+    &:last-child {
+      margin: 0;
+    }
   }
 `

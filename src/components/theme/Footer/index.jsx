@@ -13,7 +13,20 @@ export const Footer = () => (
             👨‍💻
           </span>
         </h2>
-        <p style={{ paddingTop: "5%" }}>
+        <Links>
+          {social.map(({ id, name, link, icon }) => (
+            <a
+              key={id}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`follow me on ${name}`}
+            >
+              <img width="24" src={icon} alt={name} />
+            </a>
+          ))}
+        </Links>
+        <p style={{ color: "white", paddingTop: "5%" }}>
           <span style={{ color: "black", backgroundColor: "yellow" }}>
             Attention:
           </span>{" "}
@@ -28,19 +41,6 @@ export const Footer = () => (
           by Varun Srivatsa
         </span>
       </Details>
-      <Links>
-        {social.map(({ id, name, link, icon }) => (
-          <a
-            key={id}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`follow me on ${name}`}
-          >
-            <img width="24" src={icon} alt={name} />
-          </a>
-        ))}
-      </Links>
     </Flex>
   </Wrapper>
 )

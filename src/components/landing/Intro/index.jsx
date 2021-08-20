@@ -2,7 +2,8 @@ import React, { useContext } from "react"
 import { ThemeContext } from "providers/ThemeProvider"
 import { Container } from "components/common"
 import dev from "assets/illustrations/dev.svg"
-import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles"
+import { Wrapper, IntroWrapper, Details, Thumbnail, Links } from "./styles"
+import find from "./find.json"
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext)
@@ -17,7 +18,50 @@ export const Intro = () => {
             A Student & Freelancer pursuing a career in Data Science. I love
             working on
           </h4>
-          <span className="topics"></span>
+          <span style={{ position: "absolute" }}>
+            <span className="topics"></span>
+            <Links>
+              {" "}
+              <div style={{ display: "flex", backgroundColor: "seagreen" }}>
+                <div
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: "bolder",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <span
+                    style={{
+                      paddingLeft: "10px",
+                      color: "white",
+                    }}
+                  >
+                    Find Me on:
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    padding: "5px 10px",
+                  }}
+                >
+                  {find.map(({ id, name, link, icon }) => (
+                    <a
+                      key={id}
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`follow me on ${name}`}
+                    >
+                      <img width="26" src={icon} alt={name} />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </Links>
+          </span>
         </Details>
         <Thumbnail>
           <img src={dev} alt="I’m John and I’m a JAMStack engineer!" />
