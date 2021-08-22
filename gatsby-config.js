@@ -109,7 +109,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        excludes: ["/tag"],
+        excludes: ["/tag", "/about"],
       },
     },
     `gatsby-transformer-sharp`,
