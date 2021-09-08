@@ -1,107 +1,110 @@
 ---
 title: "The Real purpose of Code"
-date: 2021-04-12
+date: 2021-09-09
 author: "Varun Srivatsa"
 tags:
   - Code
   - Programming
   - Computer Science
-description: "Let me start by asking this question. Have you ever had a piece of code, that it broke but you just had no idea why it broke? It seemed like it had been working before and now all of a sudden it’s been broken and you just can’t figure out why."
+description: "Our computers are getting better and better since the day we created them. They solve problems more efficiently and effectively than we could. We designed them to do so, and ever since the day we created the first one, they have evolved more quickly than we have."
 featureImage: "../featureImage/code_purpose.png"
 ---
 
 > Code is for Humans, not Computers.
 
-Let me start by asking this question. Have you ever had a piece of code, that it broke but you just had no idea why it broke? It seemed like it had been working before and now all of a sudden it’s been broken and you just can’t figure out why. And that is I guess about as universal as it gets for software developers, right? Is that we write this piece of code, and then it breaks and we’re just pulling our hair out, we can’t figure out why it’s broken.
+I want you to think about this question: Have you ever been stuck trying to figure out why a piece of code broke? It worked before, and now in an instant is broken, and you have no idea why it happened. Software developers and programmers both experience this, don't they? We write this code, then it breaks, and we are left scratching our heads, unable to figure out why it's broken.
 
-But let me ask a more probing question, one that’s sometimes a little harder to nod at. Have you ever written a piece of code that worked and you had no idea why it worked? And I didn’t think that was a problem at the time when I was new to programming.
+Let me ask you a more probing question, which is a bit harder to nod at. Have you ever written code that worked, but you couldn't explain why it worked? I never worried about that back when I was new to programming.
 
-I didn’t think that was a problem. I thought it was just how things are. Software developers don’t really know what we’re doing. We’re all just sort of making it up. But I’ve come to believe that that is a signal of one of these deeper, more universal problems. That we write code so much and it’s sort of a, maybe you’ve done this before because I’ve done it I can’t even count how many times, I can’t get this piece of code to work and so I’m like, all right, wrap some parentheses around it and put a plus one on it and wrap a try-catch around it. And at some point, it just accidentally works. The test case passes. And then you’re like, let me back up and just hopefully this doesn’t break, right?
+I thought that's just how things are. We don't know what we are doing as programmers. We're all just winging it.
 
-You put a little code comment there, like nobody touch this. This is house of cards design right? I can barely get this thing to balance, please nobody breathe on it. Don’t know why it works, don’t know why it balances but let’s just ship it that way.
+However, now I believe that's a sign of one of those deeper, more universal problems.
 
-And while that can feel gratifying to ship a piece of code, in the back of my mind it always bugged me. Maybe you’re that way. Maybe you’ve been bugged by, why do I ship all this code and I’m not really certain why it’s working? And I wonder If that problem of not understanding our code is one of these universal issues, and I wonder if it actually is systemic that it leads to a lot of our other problems.
+Imagine you can't get the unit test to pass, so you tuck some parentheses around it, add a plus one, and wrap a try-catch around it. And then, it just happens to work by accident. The test passes. Then you're like, let me back up, and just hope this doesn't break. You even put a little code comment there, like,
 
-As a matter of fact, I would say it this way. If you don’t know why your code works, you have no hope of fixing it when it breaks, other than sheer luck and guessing and magic.
+"Don't touch this. I can barely get it to work. I don't know why it works, but let's just ship it that way."
 
-If you don’t know why your code works, you have no hope of fixing it when it breaks.
+The truth is, if you don't know why your code works, you have no chance of fixing it when it breaks, except by sheer luck and guesswork. Nevertheless, we often do this. I like to refer to it as professional guessing. That's all we do. The only profession I've identified that gets away with professional guessing is weather forecasting.
 
-And yet, we do this all the time. I like to refer to this, we’re professional guessers, we just hope that it works. The only profession I’ve ever found that can get away with professional guessing is weathermen. Right, the weatherman just guesses maybe it’ll be sunny, maybe it’ll snow, who knows? 50⁄50 chance. But yet, should our profession be that way? Should it really be that we ship code, and we tell our boss yes, the feature is finished? And yet we have almost no confidence that it’s going to continue to do what it was supposed to be doing, because we don’t even understand why it’s doing it now.
+Nonetheless, should our profession be that way? Should we just ship code, and we tell our boss yes, this feature is done? And, yet we have little or no faith in its ability to maintain its functionality, and we have no idea why it's doing so.
 
-That’s a systemic problem among software developers, that rather than having a confidence that we know what we’re doing and why we’re doing it, and we have a specific plan, we like to think of ourselves as computer scientists, like we’re doing this very on purpose.
+It's a widespread problem among software developers that, rather than being confident that we know what we're doing and why we're doing it, we like to think of ourselves as computer scientists, as if we're doing this very on purpose.
 
-But the reality is, that whole impostor syndrome that we’re all just guessing. And some of us are better at guessing and making it look good than others, right? That’s unfortunately what I’ve seen. This is one of those universal truths, that what we do as a profession, is this professional guessing. And while that works, while we collect pay checks, it drives me to believe that there’s something better that we should be striving for. If you’re looking for the one core motivating point that drives me to write this blog, it’s this. And I aspire that others would know the same and would be challenged to do the same.
+However, the truth is, we're all just guessing in most cases. Some of us are more skilful at guessing and making it look good than others. Unfortunately, this is one of those universal truths, that our profession is mostly just guessing.
 
-How many lines of code do you think are currently in existence running today globally? There’s no right answer to this question, but I know specifically, I
-have heard specifically of code bases that just one code base had 200 million lines of code in the code base. So if there’s a few of those we’ve got to be
-talking in the tens maybe even hundreds of billions of lines of code in existence today that runs somewhere, does something. Okay, tens, maybe hundreds of billions, that’s a lot of lines of code. But here’s the more important question that I want to ask you. How many zeros do we need to add to that number, whatever it is, to account for all the lines of code that
-have ever been written?
+Although that works, while we collect pay checks, it drives me to believe that there is something better we should be doing. If you're looking for the main reason why I write this blog, it is the idea that we should be striving for something better.
 
-How many lines of code have been rewritten, not once, not twice, not ten times, hundreds of times. If you’re looking for one of those systemic problems, not just a one-off kind of problem, but a systemic problem that creates other problems in its wake. The inability to understand code to the extent that your only solution is to rewrite it , that’s one of those systemic universal problems.
+How many lines of code do you think are currently in existence running today worldwide? There's no right answer, but let's say maybe hundreds of billions, that's a lot of code. I have another question for you. How many zeroes do we need to add to that number, whatever it is, to account for all the lines of codes that have been rewritten? not once, not twice, not ten times, but hundreds of times.
 
-So what we’re getting at here is that we can’t figure it out when it works the first time. We can’t figure out why it breaks, so we rewrite it and then the cycle restarts. And we can’t figure out why what we rewrote works. And then we can’t figure out why what we rewrote has been broken, and that cycle just keeps perpetuating itself. And so eventually somebody says, hey there’s this new framework that’s been released. Let’s re-write the whole code base in the new framework, because it will certainly fix this problem. And the cycle starts all over again. And it doesn’t matter what technology you’re using. This is one of those, I’m convinced, one of those universal problems.
+If you are looking for one of those systemic universal problems that I mentioned earlier. The inability to comprehend code to such an extent that you need to totally rewrite it is such a universal problem.
 
-What I’m getting at here is that the difficulty of understanding code comes directly from our inability and unwillingness to insist that the code communicate our ideas. The problem we have here is that we’re writing our code primarily for the computer. And I got news for you, that’s not who source code is for, okay? All of the systemic universal problems that I’ve been observing, I believe this as deeply as I could believe any religious belief, they’re all coming directly because we’ve spent our entire industry, the entire 60 years plus of computing science, figuring out how to optimize our code for the computer. Instead of optimizing for the person who’s going to read that code.
+In short, we can't figure it out when it works the first time. We can't figure out why it breaks, so we rewrite it. And we can't figure out why what we rewrote works. Then our rewrite ends up broken, and we have no way of fixing it. Eventually, someone says, " Well, there is this new framework available now. Let's update the entire codebase to this new framework since it is sure to fix the problem". And the cycle starts all over again. And it doesn’t matter what technology you’re using. So, I’m convinced that, this is one of those universal problems.
 
-Do you know that computer science theory tells us that within the scope of correctly functioning programs, that is, programs that at least seem to do what we want at this exact moment, within that scope of programs, do you know there’s an infinite number of ways to write the same program?
+My point is that we often find it difficult to understand code because we're unable or unwilling to insist our ideas be communicated through the code. The problem is that we write our code primarily for computers.
 
-Not just infinite languages. Literally, within JavaScript there’s an infinite number of ways to structure that program. That kind of blows my mind because that’s a really big number, right? I think that it feels like it ought to be fixed at a million or something. But somehow, mathematically we can prove that there’s an infinite number of ways to write that same program. That’s a lot of choices, and so how we would we decide among all those choices what the best option is? What metric would we use for best? A lot of people use fastest, right? Fastest code is best, we see case studies that come out from eBay, or whatever it was.
+And I got news for you, that’s not who the source code is for, okay?
 
-And they say every quarter of a millisecond that we save gives us another million dollars of revenue, so fastest code is best. Except we don’t even understand, especially as JavaScript developers, what it means to write faster code. We don’t even understand what JavaScript is doing with the code that we write, much less what it’s doing when we tweak something and do ++i instead of i++. We have some completely broken, busted concept of what might be happening. And it’s like when you write a for loop, right? And you did a ++i instead of an i++ because you saw some jsPerf benchmark somewhere that said it’s one-tenth of a nanosecond faster. So you put it into all of your for loops. And then you also saw some benchmark somewhere that said, I need to cache the length of my arrays before I loop over them. And you do all of this work and you construct this much more complicated for loop. And it’s as if the JavaScript engine just sort of chuckles. Thanks very much, but I’m not going to do a for loop at all. Because it turns out, my second observation, not only are there an infinite number of ways to write the code. And we don’t even have a good sense of the metric to discover what is the best. But it turns out whichever one you pick is nothing more than a suggestion to the computer. By definition, the thing that we started doing back in the early 1860s, when we started inventing programming languages. That is, when programmers stopped putting ones and zeros onto punch cards and we started symbolically representing programs. By definition, what we were doing is creating a separation, AKA abstraction, between the code that we write and the precise instructions that the computer uses. And we’ve only done that more, and more, and more over the last 60 plus years. We’ve created a wider and wider separation to the extent now when you write some React code, it doesn’t even remotely resemble the actual precise instructions that run in the computer.
+I believe this as deeply as I could believe any religious belief, because we have spent the whole industry, the entire 60 years of computing science, figuring out how to optimize our code for the computer instead of optimizing for the person who is going to read that code.
 
-And yet all of us seem to have, as a predisposition, we’re good computer scientists, we’re engineers, and we know about registers. And we all have this
-perception that ++i is faster because it uses one less register. And it turns out it doesn’t do ++i at all.
+In computer science theory, we are told that there is an infinite number of ways to write the same program, within the scope of programs that at least appear to do what we want at the moment.
 
-And what we’re doing is obfuscating, and conflating, and confusing our code completely for no purpose. Because it turns out, our code is just a suggestion
-anyway. So I take these two observations, that there’s an infinite number of choices and whichever one you pick is just a suggestion anyway.
+Within JavaScript itself, the same program can be structured in an infinite number of ways. That's truly amazing because it's a huge number. In some ways, it feels like there should be a fixed number of ways to write that same program but, mathematically speaking, there are infinite possibilities. How would we decide what is the best option among all those choices? What metric would we use? Most people use fastest, right? The fastest code is the best.
 
-And I come to the conclusion, maybe the purpose of code is not to instruct the computer. Maybe that’s just a happy side effect. Maybe what the real purpose of code is for communicating ideas with other people. Maybe that’s the first and most important outcome of any source code you write, is you’ve done all this mental analysis, this mental bubble.
+The fastest code saves us a million dollars in revenue per quarter of a millisecond. Except we don’t even understand, what it means to write faster code. We have no idea what compilers do. We don't even understand what they do when we tweak something and do ++i instead of i++. You did a ++i instead of an i++ because you saw some jsPerf benchmark somewhere that said it’s one-tenth of a nanosecond faster. So you put it into all of your for loops. And there was also a benchmark somewhere that said we should cache the length of our arrays before looping over them. But it turns out that whatever you choose is nothing more than a suggestion to the computer.
 
-And you’ve done it well, but your job now is you have to communicate it well. Or all of that work was pointless. You see I’m not actually all that convinced or
-even impressed that you can write code. You tell me you ship eBay.com to 10 billion people a second. You know what I’m interested in? How many of your lines of code survive that next inevitable cycle where somebody’s trying to fix the bug or extend something, and they come across your code, how many of those lines of code that you wrote survive that it’d be faster if I rewrote its cycle?
+This is what we started doing in the 1960s when we invented programming languages. That is when programmers stopped putting ones and zeros onto punch cards and started symbolically representing programs. But what we achieved was an abstraction, or separation, between the code that we wrote and the precise instructions that the computer used. In the past 60 years, we've only gotten more and more apart. Now when you write some React code, it doesn't even resemble the precise instructions that run on the computer.
 
-I think that is a much more important metric for code quality. How clearly are you able to communicate the ideas in your code so that a future person reading it without your same mental context can figure out what the heck you were thinking, and even if you made a mistake they can spot the mistake and fix it, instead of rewriting all of your code? I suck at communicating my ideas in code. I still do, and I obsess about this day in and day out. Because we don’t even design our programming languages or our tools to optimize for how we read code.
+As a predisposition, all of us are good computer scientists, engineers, and we know about registers. Thus, we all believe that ++i is faster because it uses fewer registers. But this is not true. What we're doing is confusing, and obfuscating, and obfuscating our code completely without purpose. Because, in the end, it turns out we're just suggesting something anyways.
 
-Code that you do not understand is code that you cannot trust, and vice versa, code that you cannot trust is code that you do not understand.
+In conclusion, maybe the real purpose of code isn't to instruct computers. Perhaps that's just a happy side effect. Maybe the real purpose of code is to communicate ideas with people. Perhaps the first and most important outcome of any source code you write is that you have done the mental analysis and created this mental bubble. You have done it well, but you now have to communicate it well, or all your work is for nothing. You see I’m not actually all that convinced or even impressed that you can write code.
 
-It is so vital and critical that we shift our thinking of what we do, because I got news for you: the computer is getting better and better, and has since the day that we created it. It’s gotten better and better at solving problems more efficiently and effectively than we solve problems. We designed it to do that, and ever since we created the very first computer, they have evolved more quickly than we have. Now I don’t subscribe to that dystopian future where the computers are going to take over the whole world and there won’t be such a thing as programming. I don’t subscribe to that, but what I do know is that we face an existential crisis, not just as a profession, but as a species. We face an existential crisis that we keep trying to compete with the computer at the thing that we designed the computer to be best at.
+Do you know what I’m interested in?
 
-That cannot end in success. They are evolving faster than we are. And that, that doesn’t mean that we don’t have some role to play, but our role to play is not to outguess and outsmart the computer, and yet we’ve spent 60 years trying to optimize ourselves to solve the problems better than the computer, instead of trying to figure out how do we optimize it so that this code is more readable and understandable?
+How many of your lines of code will survive that inevitable cycle where somebody tries to fix the bug or extend something and they find your code. How many of those lines of code that you wrote will survive that "it'd be faster if I rewrote its cycle"?
 
-Why do we always optimize for writability? Every time somebody releases some new tools, some new CLI that’s, always boils down to, I’m trying to make it faster for you to write code. Look how many fewer lines of code you have to write to get the same code, and that’s how every blog post goes that launches every project that’s ever been invented.
+I think this is a much more important metric for code quality. Your code should convey your ideas clearly so that a person reading it without your same mental context will be able to recognize what you were thinking, and if you made a mistake, they will be able to spot it and fix it, instead of having to rewrite everything from scratch. I still have a hard time communicating my ideas in code. I obsess about this every day. We don't even design our programming languages or tools to optimize how we read code.
 
-Instead of saying here’s this new framework that takes twice as many lines of code, but here’s how much more understandable it is. Why don’t we ever see anybody try to optimize for the readability? It’s been studied by researchers, and they have discovered that during this process of what we do, what we call coding, that as much as 70% of that time we spend reading code.
+It is so vital and critical that we shift our thinking towards this problem because I got news for you.
 
-70% of our day is spent reading code. Do you know what the global average for lines of code written and committed to production is, per day, per programmer? Ten. Ten lines of code. You wrote 500, but the other 490 had to get deleted, and only ten survived. And why? Because you spent the other seven hours of your day figuring out where the heck to put those lines of code.
+Our computers are getting better and better since the day we created them. They solve problems more efficiently and effectively than we could. We designed them to do so, and ever since the day we created the first one, they have evolved more quickly than we have.
 
-Let's say like. Code must first be read before it can be written. That’s number eight. It’s high up on the list. Code must first be read before it can be written.
+Now I do not believe in that dystopian future where computers will take over the world and programming will cease to exist. What I do know is that we face an existential crisis, not just as a profession, but as a species. We face an existential crisis in that we keep trying to compete with the computer at what the computer was designed to be best at.
 
-There is no such thing as the write-only code. You don’t get to just write code and then not worry about how readable it is. There’s no such thing. That’s a
-mythical unicorn. You have to be able to read code to be able to write code. It is directly related to your job, and the only way that you can ensure that your code is going to survive that cycle, the only way, it doesn’t matter how good the code is, if it’s not readable, it won’t survive.
+That cannot end in success. They are evolving faster than we are. And that doesn’t mean that we don’t have some role to play, but our role to play is not to outguess and outsmart the computer, and we shouldn't spend the next 60 years trying to optimize ourselves to solve the problems better than the computer, instead, we should try to figure out how we can optimize our code so that it is more readable and understandable.
 
-The only way is to make it more readable. Now here’s a warning. A warning that I’m about to offend you. But it’s with the best of intention, okay?
+Why do we always try to optimize for writability? When somebody releases some new tools, some new CLI, it brings down to a simple concept: I'm trying to make it easier for you to write code. Look how many fewer lines of code you have to write to get the same code.
+Instead of saying here’s this new framework that takes twice as many lines of code, but here’s how much more understandable it is.
+
+Why don’t we ever see anybody try to optimize for readability?
+
+It's been studied by researchers, and they've discovered that during this process of what we do, what we call coding, as much as 70% of that time is spent reading code. 70% of our day is spent reading code.
+
+Write-only code does not exist. You cannot just write code and then not worry about how readable it is. That is a mythical unicorn. To be able to write code, one must have the ability to read code. It is directly related to your job, and the only way you can ensure that your code will survive that cycle is to ensure that it can be read. No matter how good the code is, if it is not readable, it won't survive.
+
+Now here’s a warning. A warning that I’m about to offend you. But it’s with the best of intention, okay?
 
 If your code has to be re-written to be fixed, improved, or extended, you failed. You failed as a software developer.
 
-And I think some of us reading this can identify with this idea, and we fail at our primary task of communicating our ideas, and should we actually be surprised that we struggle so much as developers? I’m actually amazed that any code ever runs anywhere, at all, as poorly as we do at communicating our ideas.
+We optimize every single process so that we can write more code quickly. So, we’re producing more and more code that nobody can understand, except the computer.
 
-We optimize every single process so that we can write more code quickly. So, we’re producing more and more code that nobody can understand, except the computer. There is an inevitable conclusion to that. I’m not trying to write the script for a sci-fi movie, but there’s an inevitable conclusion to that if you keep
-going.
+I'd like to wrap this up with a few practical suggestions.
 
-let me try to make a practical set of suggestions to wrap this up. What I’m really suggesting is that refactoring to make your code more readable, to edit it, to reconstruct it, to come up with better names, to change the organization, whatever you have to do, that that is not just a great idea, but essential. And here’s what I’m suggesting, just take six minutes out of every hour. I’m not saying you have to spend your entire day doing nothing but bike shedding over the name of a variable. Six minutes out of every hour, could you take to go back over the code you wrote in the previous 54 minutes and ask yourself, does this variable name make any sense?
+Refactoring your Code:
 
-Here’s my trick. Whenever I look at one of the pieces of code that I wrote, that’s pretty terrible, the immediate question I ask myself is, try to imagine if I
-had to teach that to a class. What would that look like, and what questions would I get from people if I was trying to explain this to people, and that’s usually my big clue. I don’t understand this code well enough, and it needs work, and it’s not going to be done like that, it’s going to take multiple revisions over and over again. I go back over my code, over, and over, and
-over, and over, almost obsessively asking, does it make sense? Am I even remotely communicating my ideas?
+It's not just a great idea, it's essential to refactor your code to make it more readable, edit it, reconstruct it, come up with better names, and change the organization.
 
-It’s the whole point. So you remember I said we face that existential crisis, and we’ve been trying to compete with the computer to do something better, to try to do better at the thing that it was designed to? Here’s the one thing that we’ll always be better at: empathetic communication with other people.
+Just take six minutes out of every hour. There is no need to spend your entire day bike shedding about the name of a variable. Instead, perhaps you can take six minutes every hour to review the code you wrote in the previous 54 minutes and ask yourself, "Does this variable name make sense?"?
 
-That’s where we should put our attention because it’s the one thing that will always distinguish us from the computer and if it ceases to distinguish us from the computer, then we might as well pack it up, because we’re done.
+Here’s my trick. Whenever I look at one of the pieces of code that I wrote, that’s pretty terrible, the immediate question I ask myself is, try to imagine if I had to teach that to a class. What would that look like, and what questions would I get from people if I was trying to explain this to people, and that’s usually my big clue. I don’t understand this code well enough, and it needs work, and it’s not going to be done like that, it’s going to take multiple revisions over and over again. I go back over my code, over, and over, and over, and over, almost obsessively asking, does it make sense? Am I even remotely communicating my ideas?
 
-I hope some of these thoughts have pushed you to rethink where you’re putting your efforts in your code. Hope they’ve challenged you to go back and have discussions with your teams about, what is it that we’re really doing here?
+This is the whole point. Remember when I said we face an existential crisis, and we've been trying to compete with the computer to do better at what it's designed to do? Here's one thing we'll always excel at empathetic communication with other people.
 
-Are we really just trying to make the computer do something? Or are we trying to make a process that works for all of us? Can we collaborate together, can we work together and can we communicate our ideas effectively with each other? That’s the only thing that’s ever going to make the work that you’re doing day-in and day-out make any difference.
+Our focus should be on that, because it's the one thing that will always separate us from the computer, and if it stops separating us from the computer, we might as well pack it up, because we're done.
 
-Yeah, you’ll collect the pay check. But make a difference and survive is if you communicate those ideas well, if your code is more readable. It’s not easy, but that’s the whole reason we have a profession. Because otherwise, let’s just let the computer do it.
+Hopefully, some of these thoughts have challenged you to rethink where you're putting your efforts in your code. Maybe they have challenged you to have discussions with your teams about, what are we really trying to accomplish? Can we collaborate together, can we work together, and can our ideas be communicated effectively with each other? Do we really want to make the computer do something? Or are we trying to make a process that works for all of us?
+
+Only then will the work that you do every day make a difference.
+
+You'll collect the pay check, but to survive you need to communicate your ideas clearly, so your code is more readable. It's hard, but it's the whole point of us having a job. If not, let's just let the computer do it.
 
 Thanks a lot for making this far.
