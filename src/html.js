@@ -13,9 +13,9 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <script
-          data-ad-client="ca-pub-7004283638114501"
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7004283638114501"
+          crossorigin="anonymous"
         ></script>
       </head>
       <body {...props.bodyAttributes}>
