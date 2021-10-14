@@ -15,7 +15,7 @@ export default function HTML(props) {
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7004283638114501"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
       </head>
       <body {...props.bodyAttributes}>
