@@ -16,12 +16,12 @@ const Navbar = () => {
           <StaticImage
             placeholder="tracedSVG"
             quality="100"
-            width={38}
-            height={38}
+            width={35}
+            height={35}
             src="./logo.svg"
             alt="logo"
           />
-          <div style={{ alignSelf: "center" }}>Varun Srivatsa</div>
+          <div style={{ paddingLeft:"3px", alignSelf: "center" }}>Varun Srivatsa</div>
         </div>
       </Brand>
       <NavbarLinks desktop />

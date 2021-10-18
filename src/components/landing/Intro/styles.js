@@ -107,6 +107,10 @@ export const Thumbnail = styled.div`
   display: flex;
   justify-content: center;
 
+  img {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  }
+
   @media (max-width: 960px) {
     img {
       margin-top: 25px;
