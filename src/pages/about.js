@@ -67,12 +67,13 @@ const About = () => {
               </span>
             </h3>
             <form
-              name="contact"
+              name="Contact Form"
               method="POST"
               netlify-honeypot="bot-field"
               data-netlify="true"
             >
-              <p class="hidden">
+              <input type="hidden" name="form-name" value="Contact Form" />
+              <p hidden>
                 <label>
                   Don’t fill this out if you’re human:{" "}
                   <input name="bot-field" />
@@ -85,6 +86,7 @@ const About = () => {
                     placeholder="Your Name"
                     type="text"
                     name="name"
+                    required
                   />
                 </label>
               </p>
@@ -95,6 +97,7 @@ const About = () => {
                     placeholder="Your Email"
                     type="email"
                     name="email"
+                    required
                   />
                 </label>
               </p>
@@ -105,6 +108,7 @@ const About = () => {
                     name="message"
                     rows="5"
                     cols="27"
+                    required
                   ></textarea>
                 </label>
               </p>
