@@ -10,8 +10,7 @@ const About = () => {
     <Layout>
       <Seo />
       <Container>
-        <div style={{ marginBottom: "4%" }}>
-          <h1>About Me</h1>
+        <div>
           <Section>
             <Image>
               <StaticImage
@@ -136,6 +135,7 @@ const Image = styled.div`
 `
 const Section = styled.div`
   display: flex;
+  width: 10% 0%;
   justify-content: space-between;
   margin-top: 5%;
 
