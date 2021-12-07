@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: varunsrivatsa.dev
+Token: 1c2b43701a75be86599e3cf4d956fc888771e20d68b7f5a197e51f7cbb60f18f
