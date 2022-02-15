@@ -15,8 +15,8 @@ export const Recent = () => {
             Following are my recent blogs
           </h3>
           <p>
-            I write a lot more about Data Science, Statistics, Programming,
-            Machine Learning & some more related topics.{" "}
+            I write about Data Science, Statistics, Programming, Machine
+            Learning & some more related topics.{" "}
             <Link to="/blogs">
               <span>Click here</span>
             </Link>
