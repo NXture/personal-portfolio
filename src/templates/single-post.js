@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link, graphql } from "gatsby"
+import { ThemeContext } from "providers/ThemeProvider"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Layout, Seo } from "components/common"
@@ -12,6 +13,7 @@ const shortcodes = { Link } // Provide common components here
 
 export default function PageTemplate({ data: { mdx }, pageContext }) {
   const siteUrl = "https://varunsrivasta.dev"
+  const { theme } = useContext(ThemeContext)
 
   const DisqusConfig = {
     url: siteUrl + pageContext.slug,
@@ -56,10 +58,11 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
             </div>
           </div>
         </Profile>
-
-        <MDXProvider components={shortcodes}>
-          <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
-        </MDXProvider>
+        <Content theme={theme}>
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
+          </MDXProvider>
+        </Content>
         <div style={{ marginTop: "10%" }}>
           <Disqus config={DisqusConfig} />
         </div>
@@ -98,6 +101,15 @@ const PostContainer = styled.div`
 
   @media (max-width: 880px) {
     margin: 0% 5%;
+  }
+`
+
+const Content = styled.div`
+  a {
+    color: #007bff;
+  }
+  a:hover {
+    border-bottom: medium solid #007bff;
   }
 `
 
