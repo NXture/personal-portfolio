@@ -45,6 +45,7 @@ export const Intro = () => {
                     display: "flex",
                     alignItems: "center",
                     padding: "5px 10px",
+                    zIndex: "1",
                   }}
                 >
                   {find.map(({ id, name, link, icon }) => (
