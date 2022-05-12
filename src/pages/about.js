@@ -17,7 +17,7 @@ const About = () => {
                 className="profile"
                 placeholder="tracedSVG"
                 quality="100"
-                src="../images/main_profile.jpeg"
+                src="../images/main_profile.svg"
                 alt="varun srivasta"
               />
             </Image>
@@ -74,7 +74,7 @@ const About = () => {
               <input type="hidden" name="form-name" value="Contact Form" />
               <p hidden>
                 <label>
-                  Don’t fill this out if you’re human:{" "}
+                  Don't fill this out if you're human:{" "}
                   <input name="bot-field" />
                 </label>
               </p>
@@ -127,7 +127,7 @@ export default About
 const Image = styled.div`
   .profile {
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-    margin: 0px 20px 0px 0px;
+    margin: 0px 30px 0px 0px;
     border-radius: 50%;
     min-width: 250px;
     max-width: 250px;
