@@ -16,21 +16,20 @@ It is first important to understand the <a href="https://bellabeat.com/" target=
 
 ## 1. Company Summary
 
-### Company Background
-
 According to Forbes, “Bellabeat is a data-oriented wellness tech company that was founded by Sandro Mur, Urška Sršen, and Lovepreet Singh in 2013” (Robter, 2020). The company is global with offices in London, Hong Kong and Zagreb, but is headquarter in San Francisco. The company focuses on women's health and wellness with a collection of wearable and non-wearable tech. The four pillars of their brand include: smart insights, women-centric, holistic approach and body positivity. With this in mind, their products focus on including metrics around a woman's menstrual cycle stating on their website that “Bellabeat helps you get in sync with your natural cycle” and that “through tracking your body's bio-responses and aligning that data with your hormonal cycle, you'll always know why you feel how you do.”
 
 ### Company products
 
 The company's wearable products include:
 
-1. Ivy - “A health tracker disguised as smart jewelry”
-2. Time - “An elegant hybrid wellness watch”
-3. Leaf - Available in three styles: chakra, urban, & crystal and can be worn as a necklace, bracelet or clip. This was Bellabeat's classic wellness tracker.
-4. Spring - A “smart water bottle” designed to track your drinking / hydration habits.
-   All of the company's wearables sync to their Bellabeat app where members can check their metrics. The wearables track activity (steps taken, distanced traveled, calories burned and activity minutes) & sleep and through the app you can also track your menstrual cycle, hydration (if not using Spring) & meditation. Their IVY wearable also tracks heart rate metrics.
+1. **Ivy** - “A health tracker disguised as smart jewelry”
+2. **Time** - “An elegant hybrid wellness watch”
+3. **Leaf** - Available in three styles: chakra, urban, & crystal and can be worn as a necklace, bracelet or clip. This was Bellabeat's classic wellness tracker.
+4. **Spring** - A “smart water bottle” designed to track your drinking / hydration habits.
 
-Bellabeat also offers a Wellness Coach app with “unlimited access to 400+ education video, written, and audio content from areas of beauty, fitness, mindfulness, women's health and more” through their Bellabeat+ membership.
+All of the company's wearables sync to their Bellabeat app where members can check their metrics. The wearables track activity (steps taken, distanced traveled, calories burned and activity minutes) & sleep and through the app you can also track your menstrual cycle, hydration (if not using Spring) & meditation. Their IVY wearable also tracks heart rate metrics.
+
+Bellabeat also offers a Wellness Coach app with “unlimited access to 400+ education video, written, and audio content from areas of beauty, fitness, mindfulness, women's health and more” through their **Bellabeat+** membership.
 
 ## 2. ASK Phase
 
@@ -40,9 +39,9 @@ Utilizing the Fitbit Fitness Tracker Data, identify some trends in smart device 
 
 ### Stakeholders
 
-1. Urška Sršen - Bellabeat's cofounder and Chief Creative Officer
-2. Sando Mur - Mathematician and Bellabeat's cofounder
-3. Bellabeat's marketing analytics team - a team of data analytics
+1. **Urška Sršen** - Bellabeat's cofounder and Chief Creative Officer
+2. **Sando Mur** - Mathematician and Bellabeat's cofounder
+3. **Bellabeat's marketing analytics team** - a team of data analytics
 
 ## 3. PREPARE Phase
 
@@ -105,11 +104,11 @@ With that said, Excel and R would have worked for anaylsis as well. <a href="htt
 
 ## 5. ANALYZE & SHARE Phases
 
-### SQL Dataset Upload
+### SQL Dataset Upload.
 
 Uploaded FitBit Fitness Tracker Data into BigQuery
 
-### User Verification: Exploring the number of users in each dataset
+### User Verification: Exploring the number of users in each dataset.
 
 Checked for # of participants by counting number of distinct Ids in each dataset
 
@@ -171,7 +170,7 @@ From above analysis: it is seen that more users prefer to use the daily Activity
 
 Both the Heart Rate and Weight Log datasets do not include enough data to move forward with analysis. These datasets will not be used.
 
-### Examine the relationship between total calories and total steps
+### Examine the relationship between total calories and total steps.
 
 To examine the relationship between total calories and total steps, I used tableau.
 
@@ -179,7 +178,7 @@ To examine the relationship between total calories and total steps, I used table
 
 Results shows that total steps and calories have a positive correlation, which is obvious - the higher calories user consume, the higher total steps that users walk or run.
 
-### Examine which day users are most active in walking and which day users are least active in walking
+### Examine which day users are most active in walking and which day users are least active in walking.
 
 I also examined which day users consumed highest calories and which day users consumed lowest calories. To do this, I used Excel to change the activity date into weekday by using text formula. After that, using SQL, I could answer the question which weekday users had the highest average number of steps and highest average distance.
 
@@ -205,7 +204,7 @@ Result:
 Visualization, created using Tableau:
 ![Weekday visualization](./weekdays.png)
 
-### Examine the question if higher sedentary time will lead to lower number of steps
+### Examine the question if higher sedentary (sitting) time will lead to lower number of steps.
 
 ![Sedentary](./sedentary-steps.png)
 
@@ -223,14 +222,13 @@ FROM `quick-howl-355111.Bellabeat.Houly_Intensities_Update`
 GROUP BY Time
 ```
 
-Result: _[Table generated according to intensity by activity hour](https://drive.google.com/file/d/1ldGH3duUEYAqkBSKNzbAq3s23wypMZAS/view?usp=sharing)_
+Result: <a href="https://drive.google.com/file/d/1ldGH3duUEYAqkBSKNzbAq3s23wypMZAS/view?usp=sharing" type="\_blank">Table</a> generated according to intensity by activity hour.
 
-Visualization:
-![Intensity by hour](./intensity-steps.png)
+Visualization: ![Intensity by hour](./intensity-steps.png)
 
 It can be seen that users are most active from 17-19h (evening), which indicates that users will often exercise during this period of time.
 
-## Conclusion & Recommendations
+## Conclusion
 
 Bellabeat's women-centric, holistic approach paired with smart insights and body positivity has led to the creation of wearable technology for women. These products empower women to utilize data to improve their overall health.
 
@@ -251,6 +249,6 @@ With that said, I was able to see some trends in the FitBit Fittness Tracker Dat
 
 Again, while there were no demographic information to assist with any potential marketing recommendations there were some insights that might be helpful for the marketing team:
 
-1. The data showed that 93.5% of users were 'active users' meaning that they utilized their FitBit consistently for 25-31 days throughout the data collection time frame. This high level of activity indicates that this group of users are invested in utilizing their fitness tracker. I would recommend marketing Bellabeats products to customers who may already own a tracker or are already invested in wellness or learning about their health. Showcasing this product as woman-focused as its unique features may convience customers who already own a wearable to switch to one of Bellabeat's products for the benefit of more targeted insights.
+1. The data showed that 93.5% of users were 'active users' meaning that they utilized their FitBit consistently for 25 - 31 days throughout the data collection time frame. This high level of activity indicates that this group of users are invested in utilizing their fitness tracker. **I would recommend marketing Bellabeats products to customers who may already own a tracker or are already invested in wellness or learning about their health.** Showcasing this product as woman - focused as its unique features may convience customers who already own a wearable to switch to one of Bellabeat's products for the benefit of more targeted insights.
 
-2. The data also showed (as mentioned above) that the total steps tracked were highest during the lunch time frame and the 5pm - 7pm time frame. This indicates that most users have a set routine -- usually fitting in the most activity during lunch or potentially after work. I'd recommend that Bellabeat market their products to customers most likely living around this particular type of routine -- customers with a set job schedule and parents with a set daily routine.
+2. The data also showed (as mentioned above) that the total steps tracked were highest during the lunch time frame and the 5pm - 7pm time frame. This indicates that most users have a set routine - usually fitting in the most activity during lunch or potentially after work.**I'd recommend that Bellabeat market their products to customers most likely living around this particular type of routine - customers with a set job schedule and parents with a set daily routine.**
