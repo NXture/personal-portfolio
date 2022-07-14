@@ -30,16 +30,16 @@ const About = () => {
                 , thanks for visiting
               </h2>
               <p>
-                I'm Varun, a Data Analyst, Data Enthusiast, and freelancer
+                I am Varun, a Data Analyst, Data Enthusiast, and freelancer
                 pursuing a career in data science. I recently earned my
                 Bachelor's degree in Computer Application - with a
                 Specialization in Data Science from Jain (Deemed-to-be
                 University), Bangalore.
               </p>
               <p>
-                I recently expanded my skill sets to topics including Machine
-                Learning, Neural Networks, and Artificial Intelligence, and I am
-                excited to keep exploring and learning new methods in a
+                Currently, I am expanding my skill sets in topics including
+                Machine Learning, Neural Networks, and Artificial Intelligence,
+                and I am excited to keep exploring and learning new methods in a
                 challenging and fast-paced environment.
               </p>
               <p>

@@ -2,11 +2,22 @@ import React from "react"
 import { Container } from "components/common"
 import { Wrapper, Flex, Links, Details } from "./styles"
 import social from "./social.json"
+import { StaticImage } from "gatsby-plugin-image"
+import styled from "styled-components"
 
 export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
+        <Image>
+          <StaticImage
+            className="certificate"
+            placeholder="tracedSVG"
+            quality="100"
+            src="../../../images/certificate.png"
+            alt="certificate"
+          />
+        </Image>
         <h2>
           Varun Srivasta | Developer{" "}
           <span aria-label="developer" role="img">
@@ -44,3 +55,12 @@ export const Footer = () => (
     </Flex>
   </Wrapper>
 )
+
+const Image = styled.div`
+  .certificate {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    min-width: 100px;
+    max-width: 180px;
+    margin-bottom: 4rem;
+  }
+`
