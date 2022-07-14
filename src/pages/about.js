@@ -23,16 +23,24 @@ const About = () => {
             </Image>
             <div>
               <h2>
+                Hi there{" "}
                 <span role="img" aria-label="greetings">
                   👋
                 </span>
-                Hi there, thanks for visiting!
+                , thanks for visiting
               </h2>
               <p>
-                I'm Varun, a student and freelancer pursuing a career in data
-                science. Currently, I'm studying Bachelor of Computer
-                Application - Specialization in Data Science at Jain University,
-                Bangalore.
+                I'm Varun, a Data Analyst, Data Enthusiast, and freelancer
+                pursuing a career in data science. I recently earned my
+                Bachelor's degree in Computer Application - with a
+                Specialization in Data Science from Jain (Deemed-to-be
+                University), Bangalore.
+              </p>
+              <p>
+                I recently expanded my skill sets to topics including Machine
+                Learning, Neural Networks, and Artificial Intelligence, and I am
+                excited to keep exploring and learning new methods in a
+                challenging and fast-paced environment.
               </p>
               <p>
                 This site is my corner of the internet which I am using to

@@ -65,8 +65,8 @@ export const Details = styled.div`
 
   .topics:before {
     content: "";
-    animation: animate infinite 10s;
-    animation-delay: 0.2s;
+    animation: animate 7s infinite ease-in-out;
+    animation-delay: 0.1s;
   }
 
   .topics {
@@ -88,7 +88,7 @@ export const Details = styled.div`
       content: "Machine Learning";
     }
     25% {
-      content: "Data Analytics";
+      content: "Data Analysis";
     }
     50% {
       content: "Data Visualization";
@@ -97,7 +97,7 @@ export const Details = styled.div`
       content: "Web Development";
     }
     to {
-      content: "Model Deployment";
+      content: "Artificial Intelligence";
     }
   }
 `
