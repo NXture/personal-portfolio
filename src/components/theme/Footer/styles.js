@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   background-color: #2f2e33;
 
   @media (max-width: 1960px) {
-    padding: 4rem 0 4rem;
+    padding: 6rem 0 4rem;
   }
 `
 
@@ -14,8 +14,8 @@ export const Flex = styled.div`
   align-items: flex-end;
   justify-content: space-between;
 
-  @media (max-width: 680px) {
-    flex-direction: column;
+  @media (max-width: 960px) {
+    flex-direction: column-reverse;
     text-align: center;
     align-items: center;
   }
@@ -38,7 +38,7 @@ export const Links = styled.div`
     }
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 960px) {
     justify-content: center;
   }
 `
@@ -50,7 +50,7 @@ export const Details = styled.div`
     color: #fff;
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 960px) {
     margin-bottom: 2rem;
   }
 `
