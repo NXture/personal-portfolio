@@ -135,7 +135,7 @@ export default About
 const Image = styled.div`
   .profile {
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-    margin: 0px 30px 0px 0px;
+    margin: 0rem 2rem 0rem 2rem;
     border-radius: 50%;
     min-width: 250px;
     max-width: 250px;
