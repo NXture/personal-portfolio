@@ -10,13 +10,32 @@ export const Footer = () => (
     <Flex as={Container}>
       <Details>
         <Image>
-          <StaticImage
-            className="certificate"
-            placeholder="tracedSVG"
-            quality="100"
-            src="../../../images/certificate.png"
-            alt="certificate"
-          />
+          <a
+            href="https://www.credly.com/badges/aa78c626-2c39-4fd3-a3c8-b11750bda000/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <StaticImage
+              className="certificate"
+              placeholder="tracedSVG"
+              quality="100"
+              src="../../../images/certificate.png"
+              alt="certificate"
+            />
+          </a>
+          <a
+            href="https://www.credly.com/badges/bdb40801-aeb7-4746-b81c-ceb311bc4126/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <StaticImage
+              className="certificate"
+              placeholder="tracedSVG"
+              quality="100"
+              src="../../../images/ibm_badge.png"
+              alt="badge"
+            />
+          </a>
         </Image>
         <h2>
           Varun Srivasta | Developer{" "}
@@ -60,7 +79,9 @@ const Image = styled.div`
   .certificate {
     filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
     min-width: 100px;
-    max-width: 180px;
-    margin-bottom: 4rem;
+    max-width: 160px;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 `
